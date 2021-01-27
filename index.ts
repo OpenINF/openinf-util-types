@@ -18,9 +18,9 @@
 const toString_ = Object.prototype.toString;
 
 /**
- * Returns the ECMA [[Class]] of a value
- * @param {*} value
- * @return {string}
+ * Returns the ECMA [[Class]] of a value.
+ * @param {unknown} value
+ * @returns {string}
  */
 function toString(value) {
   return toString_.call(value);
@@ -28,8 +28,8 @@ function toString(value) {
 
 /**
  * Determines if value is actually an Array.
- * @param {*} value
- * @return {boolean}
+ * @param {unknown} value
+ * @returns {boolean}
  */
 export function isArray(value) {
   return Array.isArray(value);
@@ -38,7 +38,7 @@ export function isArray(value) {
 /**
  * Converts an array-like object to an array.
  * @param {?IArrayLike<T>|string} arrayLike
- * @return {!Array<T>}
+ * @returns {!Array<T>}
  * @template T
  */
 export function toArray(arrayLike) {
@@ -49,7 +49,7 @@ export function toArray(arrayLike) {
  * If the specified argument is an array, it's returned as is. If it's a
  * single item, the array containing this item is created and returned.
  * @param {!Array<T>|T} arrayOrSingleItem
- * @return {!Array<T>}
+ * @returns {!Array<T>}
  * @template T
  */
 export function arrayOrSingleItemToArray(arrayOrSingleItem) {
@@ -60,8 +60,8 @@ export function arrayOrSingleItemToArray(arrayOrSingleItem) {
 
 /**
  * Determines if value is actually an Object.
- * @param {*} value
- * @return {boolean}
+ * @param {unknown} value
+ * @returns {boolean}
  */
 export function isObject(value) {
   return toString(value) === '[object Object]';
@@ -71,8 +71,8 @@ export function isObject(value) {
  * Determines if value is of number type and finite.
  * NaN and Infinity are not considered a finite number.
  * String numbers are not considered numbers.
- * @param {*} value
- * @return {boolean}
+ * @param {unknown} value
+ * @returns {boolean}
  */
 export function isFiniteNumber(value) {
   return typeof value === 'number' && isFinite(value);
@@ -83,7 +83,7 @@ export function isFiniteNumber(value) {
  *
  * @param {!Object<T>} enumObj
  * @param {T} s
- * @return {boolean}
+ * @returns {boolean}
  * @template T
  */
 export function isEnumValue(enumObj, s) {
@@ -102,8 +102,8 @@ export function isEnumValue(enumObj, s) {
  * null on disconnected documents or old IE.
  * This helper function casts it into just a simple Window return type.
  *
- * @param {!Window|null} winOrNull
- * @return {!Window}
+ * @param {!Window | null} winOrNull
+ * @returns {!Window}
  */
 export function toWin(winOrNull) {
   return /** @type {!Window} */ (winOrNull);
