@@ -1,0 +1,66 @@
+<h1 align="center">@openinf/util-types</h1>
+
+<p align="center">Fundamental JavaScript type-related utilities</p>
+
+<br />
+
+<p align="center">
+  <a href="https://www.npmjs.com/package/@openinf/util-types"><img src="https://img.shields.io/npm/v/@openinf/util-types?style=plastic" alt="view on npm" /></a>
+  <img src="https://img.shields.io/github/languages/top/openinf/util-types?color=blue&style=plastic" />
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/openinf/openinf.github.io?color=blue&style=plastic" alt="License: MIT" /></a>
+</p>
+
+<br />
+
+_The high-level goal of `@openinf/util-types` is to serve as a Node.js
+package containing utilities for **fundamental JavaScript type-related
+operations** primarily enabling users to perform native typechecking and
+simplify type coercion. As is the case with any software project in continuous
+development, omissions and errors may exist, for which contributions are
+welcome._
+
+<br />
+
+---
+
+<br />
+
+## Installation
+
+`@openinf/util-types` runs on Node.js and is available via `npm`.
+
+```shell
+npm install @openinf/util-types
+```
+
+## Usage
+
+Import the helper functions based on your platform.
+
+```ts
+import { isObject } from '@openinf/util-types';
+
+const maybeObject = null;
+
+if (isObject(maybeObject)) {
+  console.log('The value of `maybeObject` is actually an Object.');
+} else {
+  console.log('The value of `maybeObject` not an Object.');
+}
+```
+
+<br />
+
+---
+
+<br />
+
+{{>main}}
+
+<br />
+
+---
+
+<br />
+
+&copy; OpenINF

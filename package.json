@@ -4,6 +4,9 @@
   "main": "./index.js",
   "types": "./index.d.ts",
   "scripts": {
+    "compile": "npm run compile-src && npm run compile-doc",
+    "compile-src": "tsc --project ./",
+    "compile-doc": "jsdoc2md --template README.hbs --files index.js > ./README.md",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +24,9 @@
     "url": "https://github.com/openinf/util-types/issues"
   },
   "homepage": "https://github.com/openinf/util-types#readme",
-  "description": "Fundamental JavaScript type-related utilities"
+  "description": "Fundamental JavaScript type-related utilities",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^6.0.1",
+    "typescript": "^4.1.3"
+  }
 }
