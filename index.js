@@ -1,3 +1,4 @@
+"use strict";
 // Copyright 2021 the OpenINF authors. All rights reserved. MIT license.
 //
 // Adapted from AMP. Copyright The AMP HTML Authors.
@@ -14,40 +15,46 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.isWeakSet = exports.isWeakMap = exports.isUint32Array = exports.isUint16Array = exports.isUint8ClampedArray = exports.isUint8Array = exports.isTypedArray = exports.isSymbolObject = exports.isStringObject = exports.isSharedArrayBuffer = exports.isSetIterator = exports.isSet = exports.isRegExp = exports.isPromise = exports.isBigIntObject = exports.isNumberObject = exports.isNativeError = exports.isModuleNamespaceObject = exports.isMapIterator = exports.isMap = exports.isInt32Array = exports.isInt16Array = exports.isInt8Array = exports.isGeneratorObject = exports.isGeneratorFunction = exports.isFloat64Array = exports.isFloat32Array = exports.isDate = exports.isDataView = exports.isBoxedPrimitive = exports.isBooleanObject = exports.isBigUint64Array = exports.isBigInt64Array = exports.isAsyncFunction = exports.isArrayBuffer = exports.isArgumentsObject = exports.isArrayBufferView = exports.isAnyArrayBuffer = exports.isFiniteNumber = exports.isObject = exports.toArray = exports.isArray = exports.toString = void 0;
 const _toString = Object.prototype.toString;
 /**
  * Returns the ECMA [[Class]] of a value.
  * @param {unknown} value
  * @returns {string}
  */
-export function toString(value) {
+function toString(value) {
     return _toString.call(value);
 }
+exports.toString = toString;
 /**
  * Determines if value is actually an Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isArray(value) {
+function isArray(value) {
     return Array.isArray(value);
 }
+exports.isArray = isArray;
 /**
  * Converts an array-like object to an array.
  * @param {!(ArrayLike<T> | string)} arrayLike
  * @returns {!Array<T>}
  * @template T
  */
-export function toArray(arrayLike) {
+function toArray(arrayLike) {
     return arrayLike ? Array.prototype.slice.call(arrayLike) : [];
 }
+exports.toArray = toArray;
 /**
  * Determines if value is actually an Object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isObject(value) {
+function isObject(value) {
     return toString(value) === '[object Object]';
 }
+exports.isObject = isObject;
 /**
  * Determines if value is of number type and finite.
  * NaN and Infinity are not considered a finite number.
@@ -55,9 +62,10 @@ export function isObject(value) {
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isFiniteNumber(value) {
+function isFiniteNumber(value) {
     return typeof value === 'number' && isFinite(value);
 }
+exports.isFiniteNumber = isFiniteNumber;
 // Adapted from Deno. Copyright the Deno authors.
 // @see https://github.com/denoland/deno_std/blob/HEAD/node/_util/_util_types.ts
 //
@@ -101,67 +109,75 @@ const _isFunctionLike = (value) => value !== null && typeof value === "function"
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isAnyArrayBuffer(value) {
+function isAnyArrayBuffer(value) {
     return (_isObjectLike(value) &&
         (toString(value) === "[object ArrayBuffer]" ||
             toString(value) === "[object SharedArrayBuffer]"));
 }
+exports.isAnyArrayBuffer = isAnyArrayBuffer;
 /**
  * Determines if value is actually an ArrayBufferView.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isArrayBufferView(value) {
+function isArrayBufferView(value) {
     return ArrayBuffer.isView(value);
 }
+exports.isArrayBufferView = isArrayBufferView;
 /**
  * Determines if value is actually an Arguments object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isArgumentsObject(value) {
+function isArgumentsObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Arguments]";
 }
+exports.isArgumentsObject = isArgumentsObject;
 /**
  * Determines if value is actually an ArrayBuffer.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isArrayBuffer(value) {
+function isArrayBuffer(value) {
     return (_isObjectLike(value) && toString(value) === "[object ArrayBuffer]");
 }
+exports.isArrayBuffer = isArrayBuffer;
 /**
  * Determines if value is actually an AsyncFunction.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isAsyncFunction(value) {
+function isAsyncFunction(value) {
     return (_isFunctionLike(value) && toString(value) === "[object AsyncFunction]");
 }
+exports.isAsyncFunction = isAsyncFunction;
 /**
  * Determines if value is actually a BigInt64Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isBigInt64Array(value) {
+function isBigInt64Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object BigInt64Array]");
 }
+exports.isBigInt64Array = isBigInt64Array;
 /**
  * Determines if value is actually a BigUint64Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isBigUint64Array(value) {
+function isBigUint64Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object BigUint64Array]");
 }
+exports.isBigUint64Array = isBigUint64Array;
 /**
  * Determines if value is actually a Boolean object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isBooleanObject(value) {
+function isBooleanObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Boolean]";
 }
+exports.isBooleanObject = isBooleanObject;
 /**
  * Determines if value is actually one of the boxed primitives:
  * - Boolean
@@ -173,248 +189,278 @@ export function isBooleanObject(value) {
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isBoxedPrimitive(value) {
+function isBoxedPrimitive(value) {
     return (isBooleanObject(value) ||
         isStringObject(value) ||
         isNumberObject(value) ||
         isSymbolObject(value) ||
         isBigIntObject(value));
 }
+exports.isBoxedPrimitive = isBoxedPrimitive;
 /**
  * Determines if value is actually a DataView.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isDataView(value) {
+function isDataView(value) {
     return _isObjectLike(value) && toString(value) === "[object DataView]";
 }
+exports.isDataView = isDataView;
 /**
  * Determines if value is actually a Date.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isDate(value) {
+function isDate(value) {
     return _isObjectLike(value) && toString(value) === "[object Date]";
 }
+exports.isDate = isDate;
 /**
  * Determines if value is actually a Float32Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isFloat32Array(value) {
+function isFloat32Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Float32Array]");
 }
+exports.isFloat32Array = isFloat32Array;
 /**
  * Determines if value is actually a Float64Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isFloat64Array(value) {
+function isFloat64Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Float64Array]");
 }
+exports.isFloat64Array = isFloat64Array;
 /**
  * Determines if value is actually a GeneratorFunction.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isGeneratorFunction(value) {
+function isGeneratorFunction(value) {
     return (_isFunctionLike(value) &&
         toString(value) === "[object GeneratorFunction]");
 }
+exports.isGeneratorFunction = isGeneratorFunction;
 /**
  * Determines if value is actually a Generator object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isGeneratorObject(value) {
+function isGeneratorObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Generator]";
 }
+exports.isGeneratorObject = isGeneratorObject;
 /**
  * Determines if value is actually a Int8Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isInt8Array(value) {
+function isInt8Array(value) {
     return _isObjectLike(value) && toString(value) === "[object Int8Array]";
 }
+exports.isInt8Array = isInt8Array;
 /**
  * Determines if value is actually a Int16Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isInt16Array(value) {
+function isInt16Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Int16Array]");
 }
+exports.isInt16Array = isInt16Array;
 /**
  * Determines if value is actually a isInt32Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isInt32Array(value) {
+function isInt32Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Int32Array]");
 }
+exports.isInt32Array = isInt32Array;
 /**
  * Determines if value is actually a Map.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isMap(value) {
+function isMap(value) {
     return _isObjectLike(value) && toString(value) === "[object Map]";
 }
+exports.isMap = isMap;
 /**
  * Determines if value is actually a Map Iterator.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isMapIterator(value) {
+function isMapIterator(value) {
     return (_isObjectLike(value) && toString(value) === "[object Map Iterator]");
 }
+exports.isMapIterator = isMapIterator;
 /**
  * Determines if value is actually a Module namespace object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isModuleNamespaceObject(value) {
+function isModuleNamespaceObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Module]";
 }
+exports.isModuleNamespaceObject = isModuleNamespaceObject;
 /**
  * Determines if value is actually a native Error.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isNativeError(value) {
+function isNativeError(value) {
     return _isObjectLike(value) && toString(value) === "[object Error]";
 }
+exports.isNativeError = isNativeError;
 /**
  * Determines if value is actually a Number object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isNumberObject(value) {
+function isNumberObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Number]";
 }
+exports.isNumberObject = isNumberObject;
 /**
  * Determines if value is actually a BigInt object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isBigIntObject(value) {
+function isBigIntObject(value) {
     return _isObjectLike(value) && toString(value) === "[object BigInt]";
 }
+exports.isBigIntObject = isBigIntObject;
 /**
  * Determines if value is actually a Promise.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isPromise(value) {
+function isPromise(value) {
     return _isObjectLike(value) && toString(value) === "[object Promise]";
 }
+exports.isPromise = isPromise;
 /**
  * Determines if value is actually a RegExp.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isRegExp(value) {
+function isRegExp(value) {
     return _isObjectLike(value) && toString(value) === "[object RegExp]";
 }
+exports.isRegExp = isRegExp;
 /**
  * Determines if value is actually a Set.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isSet(value) {
+function isSet(value) {
     return _isObjectLike(value) && toString(value) === "[object Set]";
 }
+exports.isSet = isSet;
 /**
  * Determines if value is actually a Set Iterator.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isSetIterator(value) {
+function isSetIterator(value) {
     return (_isObjectLike(value) && toString(value) === "[object Set Iterator]");
 }
+exports.isSetIterator = isSetIterator;
 /**
  * Determines if value is actually a SharedArrayBuffer.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isSharedArrayBuffer(value) {
+function isSharedArrayBuffer(value) {
     return (_isObjectLike(value) &&
         toString(value) === "[object SharedArrayBuffer]");
 }
+exports.isSharedArrayBuffer = isSharedArrayBuffer;
 /**
  * Determines if value is actually a String object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isStringObject(value) {
+function isStringObject(value) {
     return _isObjectLike(value) && toString(value) === "[object String]";
 }
+exports.isStringObject = isStringObject;
 /**
  * Determines if value is actually a Symbol object.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isSymbolObject(value) {
+function isSymbolObject(value) {
     return _isObjectLike(value) && toString(value) === "[object Symbol]";
 }
+exports.isSymbolObject = isSymbolObject;
 // Adapted from Lodash
 /**
  * Determines if value is one of the typed arrays.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isTypedArray(value) {
+function isTypedArray(value) {
     /** Used to match `toStringTag` values of typed arrays. */
     const reTypedTag = /^\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\]$/;
     return _isObjectLike(value) && reTypedTag.test(toString(value));
 }
+exports.isTypedArray = isTypedArray;
 /**
  * Determines if value is actually a Uint8Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isUint8Array(value) {
+function isUint8Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Uint8Array]");
 }
+exports.isUint8Array = isUint8Array;
 /**
  * Determines if value is actually a Uint8ClampedArray.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isUint8ClampedArray(value) {
+function isUint8ClampedArray(value) {
     return (_isObjectLike(value) &&
         toString(value) === "[object Uint8ClampedArray]");
 }
+exports.isUint8ClampedArray = isUint8ClampedArray;
 /**
  * Determines if value is actually a Uint16Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isUint16Array(value) {
+function isUint16Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Uint16Array]");
 }
+exports.isUint16Array = isUint16Array;
 /**
  * Determines if value is actually a Uint32Array.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isUint32Array(value) {
+function isUint32Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Uint32Array]");
 }
+exports.isUint32Array = isUint32Array;
 /**
  * Determines if value is actually a WeakMap.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isWeakMap(value) {
+function isWeakMap(value) {
     return _isObjectLike(value) && toString(value) === "[object WeakMap]";
 }
+exports.isWeakMap = isWeakMap;
 /**
  * Determines if value is actually a WeakSet.
  * @param {unknown} value
  * @returns {boolean}
  */
-export function isWeakSet(value) {
+function isWeakSet(value) {
     return _isObjectLike(value) && toString(value) === "[object WeakSet]";
 }
+exports.isWeakSet = isWeakSet;
