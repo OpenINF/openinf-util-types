@@ -7,7 +7,7 @@
     "compile": "npm run compile-src && npm run compile-doc",
     "compile-src": "tsc --project ./",
     "compile-doc": "jsdoc2md --template README.hbs --files index.js > ./README.md",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape '*.test.js'"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,11 @@
   "homepage": "https://github.com/openinf/util-types#readme",
   "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
+    "@types/jsdom": "^16.2.6",
+    "@types/tape": "^4.13.0",
     "jsdoc-to-markdown": "^6.0.1",
+    "jsdom": "^16.4.0",
+    "tape": "^5.1.1",
     "typescript": "^4.1.3"
   }
 }
