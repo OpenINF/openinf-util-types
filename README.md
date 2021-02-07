@@ -209,44 +209,44 @@ String numbers are not considered numbers.</p>
 ## toString(value) ⇒ <code>string</code>
 Returns the ECMA [[Class]] of a value.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isArray"></a>
 
 ## isArray(value) ⇒ <code>boolean</code>
 Determines if value is actually an Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="toArray"></a>
 
 ## toArray(arrayLike) ⇒ <code>Array.&lt;T&gt;</code>
 Converts an array-like object to an array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| arrayLike | <code>ArrayLike.&lt;T&gt;</code> \| <code>string</code> | 
+| arrayLike | <code>ArrayLike.&lt;T&gt;</code> \| <code>string</code> |
 
 <a name="isObject"></a>
 
 ## isObject(value) ⇒ <code>boolean</code>
 Determines if value is actually an Object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isFiniteNumber"></a>
 
@@ -255,123 +255,123 @@ Determines if value is of number type and finite.
 NaN and Infinity are not considered a finite number.
 String numbers are not considered numbers.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="_isObjectLike"></a>
 
 ## \_isObjectLike(value) ⇒ <code>boolean</code>
 Determines if value is actually object-like.
 
-**Kind**: global function  
-**Internal**:   
+**Kind**: global function
+**Internal**:
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="_isFunctionLike"></a>
 
 ## \_isFunctionLike(value) ⇒ <code>boolean</code>
 Determines if value is actually function-like.
 
-**Kind**: global function  
-**Internal**:   
+**Kind**: global function
+**Internal**:
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isAnyArrayBuffer"></a>
 
 ## isAnyArrayBuffer(value) ⇒ <code>boolean</code>
 Determines if value is actually an ArrayBuffer or SharedArrayBuffer.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isArrayBufferView"></a>
 
 ## isArrayBufferView(value) ⇒ <code>boolean</code>
 Determines if value is actually an ArrayBufferView.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isArgumentsObject"></a>
 
 ## isArgumentsObject(value) ⇒ <code>boolean</code>
 Determines if value is actually an Arguments object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isArrayBuffer"></a>
 
 ## isArrayBuffer(value) ⇒ <code>boolean</code>
 Determines if value is actually an ArrayBuffer.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isAsyncFunction"></a>
 
 ## isAsyncFunction(value) ⇒ <code>boolean</code>
 Determines if value is actually an AsyncFunction.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isBigInt64Array"></a>
 
 ## isBigInt64Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a BigInt64Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isBigUint64Array"></a>
 
 ## isBigUint64Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a BigUint64Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isBooleanObject"></a>
 
 ## isBooleanObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a Boolean object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isBoxedPrimitive"></a>
 
@@ -383,336 +383,336 @@ Determines if value is actually one of the boxed primitives:
 - Symbol
 - BigInt
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isDataView"></a>
 
 ## isDataView(value) ⇒ <code>boolean</code>
 Determines if value is actually a DataView.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isDate"></a>
 
 ## isDate(value) ⇒ <code>boolean</code>
 Determines if value is actually a Date.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isFloat32Array"></a>
 
 ## isFloat32Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Float32Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isFloat64Array"></a>
 
 ## isFloat64Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Float64Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isGeneratorFunction"></a>
 
 ## isGeneratorFunction(value) ⇒ <code>boolean</code>
 Determines if value is actually a GeneratorFunction.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isGeneratorObject"></a>
 
 ## isGeneratorObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a Generator object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isInt8Array"></a>
 
 ## isInt8Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Int8Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isInt16Array"></a>
 
 ## isInt16Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Int16Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isInt32Array"></a>
 
 ## isInt32Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a isInt32Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isMap"></a>
 
 ## isMap(value) ⇒ <code>boolean</code>
 Determines if value is actually a Map.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isMapIterator"></a>
 
 ## isMapIterator(value) ⇒ <code>boolean</code>
 Determines if value is actually a Map Iterator.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isModuleNamespaceObject"></a>
 
 ## isModuleNamespaceObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a Module namespace object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isNativeError"></a>
 
 ## isNativeError(value) ⇒ <code>boolean</code>
 Determines if value is actually a native Error.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isNumberObject"></a>
 
 ## isNumberObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a Number object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isBigIntObject"></a>
 
 ## isBigIntObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a BigInt object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isPromise"></a>
 
 ## isPromise(value) ⇒ <code>boolean</code>
 Determines if value is actually a Promise.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isRegExp"></a>
 
 ## isRegExp(value) ⇒ <code>boolean</code>
 Determines if value is actually a RegExp.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isSet"></a>
 
 ## isSet(value) ⇒ <code>boolean</code>
 Determines if value is actually a Set.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isSetIterator"></a>
 
 ## isSetIterator(value) ⇒ <code>boolean</code>
 Determines if value is actually a Set Iterator.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isSharedArrayBuffer"></a>
 
 ## isSharedArrayBuffer(value) ⇒ <code>boolean</code>
 Determines if value is actually a SharedArrayBuffer.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isStringObject"></a>
 
 ## isStringObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a String object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isSymbolObject"></a>
 
 ## isSymbolObject(value) ⇒ <code>boolean</code>
 Determines if value is actually a Symbol object.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isTypedArray"></a>
 
 ## isTypedArray(value) ⇒ <code>boolean</code>
 Determines if value is one of the typed arrays.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isTypedArray..reTypedTag"></a>
 
 ### isTypedArray~reTypedTag
 Used to match `toStringTag` values of typed arrays.
 
-**Kind**: inner constant of [<code>isTypedArray</code>](#isTypedArray)  
+**Kind**: inner constant of [<code>isTypedArray</code>](#isTypedArray)
 <a name="isUint8Array"></a>
 
 ## isUint8Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Uint8Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isUint8ClampedArray"></a>
 
 ## isUint8ClampedArray(value) ⇒ <code>boolean</code>
 Determines if value is actually a Uint8ClampedArray.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isUint16Array"></a>
 
 ## isUint16Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Uint16Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isUint32Array"></a>
 
 ## isUint32Array(value) ⇒ <code>boolean</code>
 Determines if value is actually a Uint32Array.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isWeakMap"></a>
 
 ## isWeakMap(value) ⇒ <code>boolean</code>
 Determines if value is actually a WeakMap.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 <a name="isWeakSet"></a>
 
 ## isWeakSet(value) ⇒ <code>boolean</code>
 Determines if value is actually a WeakSet.
 
-**Kind**: global function  
+**Kind**: global function
 
 | Param | Type |
 | --- | --- |
-| value | <code>unknown</code> | 
+| value | <code>unknown</code> |
 
 
 <br />
