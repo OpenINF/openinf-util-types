@@ -1,5 +1,5 @@
 "use strict";
-// Copyright 2021 the OpenINF authors. All rights reserved. MIT license.
+// Copyright 2021 The OpenINF Authors. All rights reserved. MIT license.
 //
 // Adapted from AMP. Copyright The AMP HTML Authors.
 // @see https://github.com/ampproject/amphtml/blob/HEAD/src/types.js

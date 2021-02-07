@@ -7,7 +7,7 @@
 <p align="center">
   <a href="https://www.npmjs.com/package/@openinf/util-types"><img src="https://img.shields.io/npm/v/@openinf/util-types?style=plastic" alt="view on npm" /></a>
   <img src="https://img.shields.io/github/languages/top/openinf/util-types?color=blue&style=plastic" />
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/openinf/openinf.github.io?color=blue&style=plastic" alt="License: MIT" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/github/license/openinf/util-types?color=blue&style=plastic" alt="License: MIT" /></a>
 </p>
 
 <br />
@@ -721,4 +721,5 @@ Determines if value is actually a WeakSet.
 
 <br />
 
-&copy; OpenINF
+<p align="center">&copy; The OpenINF Authors</center></p>
+<p align="center"><img height="32px" width="32px" src="https://raw.githubusercontent.com/openinf/openinf.github.io/live/logo.svg" /></p>
