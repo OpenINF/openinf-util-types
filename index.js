@@ -1,7 +1,7 @@
 "use strict";
 // Copyright 2021 The OpenINF Authors. All rights reserved. MIT license.
 //
-// Adapted from AMP. Copyright The AMP HTML Authors.
+// Adapted from AMP HTML. Copyright The AMP HTML Authors.
 // @see https://github.com/ampproject/amphtml/blob/HEAD/src/types.js
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -28,7 +28,7 @@ function toString(value) {
 }
 exports.toString = toString;
 /**
- * Determines if value is actually an Array.
+ * Determines if value is actually of type `Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -47,7 +47,7 @@ function toArray(arrayLike) {
 }
 exports.toArray = toArray;
 /**
- * Determines if value is actually an Object.
+ * Determines if value is actually of type `Object`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -57,7 +57,7 @@ function isObject(value) {
 exports.isObject = isObject;
 /**
  * Determines if value is of number type and finite.
- * NaN and Infinity are not considered a finite number.
+ * `NaN` and `Infinity` are not considered a finite number.
  * String numbers are not considered numbers.
  * @param {unknown} value
  * @returns {boolean}
@@ -94,18 +94,18 @@ exports.isFiniteNumber = isFiniteNumber;
  * Determines if value is actually object-like.
  * @param {unknown} value
  * @returns {boolean}
- * @internal
+ * @private
  */
 const _isObjectLike = (value) => value !== null && typeof value === "object";
 /**
  * Determines if value is actually function-like.
  * @param {unknown} value
  * @returns {boolean}
- * @internal
+ * @private
  */
 const _isFunctionLike = (value) => value !== null && typeof value === "function";
 /**
- * Determines if value is actually an ArrayBuffer or SharedArrayBuffer.
+ * Determines if value is actually of type `ArrayBuffer` or `SharedArrayBuffer`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -116,7 +116,7 @@ function isAnyArrayBuffer(value) {
 }
 exports.isAnyArrayBuffer = isAnyArrayBuffer;
 /**
- * Determines if value is actually an ArrayBufferView.
+ * Determines if value is actually an [`ArrayBufferView`](https://developer.mozilla.org/en-US/docs/Web/API/ArrayBufferView).
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -125,7 +125,7 @@ function isArrayBufferView(value) {
 }
 exports.isArrayBufferView = isArrayBufferView;
 /**
- * Determines if value is actually an Arguments object.
+ * Determines if value is actually an `Arguments` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -134,7 +134,7 @@ function isArgumentsObject(value) {
 }
 exports.isArgumentsObject = isArgumentsObject;
 /**
- * Determines if value is actually an ArrayBuffer.
+ * Determines if value is actually of type `ArrayBuffer`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -143,7 +143,7 @@ function isArrayBuffer(value) {
 }
 exports.isArrayBuffer = isArrayBuffer;
 /**
- * Determines if value is actually an AsyncFunction.
+ * Determines if value is actually of type `AsyncFunction`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -152,7 +152,7 @@ function isAsyncFunction(value) {
 }
 exports.isAsyncFunction = isAsyncFunction;
 /**
- * Determines if value is actually a BigInt64Array.
+ * Determines if value is actually of type `BigInt64Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -161,7 +161,7 @@ function isBigInt64Array(value) {
 }
 exports.isBigInt64Array = isBigInt64Array;
 /**
- * Determines if value is actually a BigUint64Array.
+ * Determines if value is actually of type `BigUint64Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -170,7 +170,7 @@ function isBigUint64Array(value) {
 }
 exports.isBigUint64Array = isBigUint64Array;
 /**
- * Determines if value is actually a Boolean object.
+ * Determines if value is actually a `Boolean` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -180,11 +180,11 @@ function isBooleanObject(value) {
 exports.isBooleanObject = isBooleanObject;
 /**
  * Determines if value is actually one of the boxed primitives:
- * - Boolean
- * - String
- * - Number
- * - Symbol
- * - BigInt
+ * - `Boolean`
+ * - `String`
+ * - `Number`
+ * - `Symbol`
+ * - `BigInt`
  *
  * @param {unknown} value
  * @returns {boolean}
@@ -198,7 +198,7 @@ function isBoxedPrimitive(value) {
 }
 exports.isBoxedPrimitive = isBoxedPrimitive;
 /**
- * Determines if value is actually a DataView.
+ * Determines if value is actually of type `DataView`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -207,7 +207,7 @@ function isDataView(value) {
 }
 exports.isDataView = isDataView;
 /**
- * Determines if value is actually a Date.
+ * Determines if value is actually of type `Date`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -216,7 +216,7 @@ function isDate(value) {
 }
 exports.isDate = isDate;
 /**
- * Determines if value is actually a Float32Array.
+ * Determines if value is actually of type `Float32Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -225,7 +225,7 @@ function isFloat32Array(value) {
 }
 exports.isFloat32Array = isFloat32Array;
 /**
- * Determines if value is actually a Float64Array.
+ * Determines if value is actually of type `Float64Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -234,7 +234,7 @@ function isFloat64Array(value) {
 }
 exports.isFloat64Array = isFloat64Array;
 /**
- * Determines if value is actually a GeneratorFunction.
+ * Determines if value is actually of type `GeneratorFunction`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -244,7 +244,7 @@ function isGeneratorFunction(value) {
 }
 exports.isGeneratorFunction = isGeneratorFunction;
 /**
- * Determines if value is actually a Generator object.
+ * Determines if value is actually a `Generator` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -253,7 +253,7 @@ function isGeneratorObject(value) {
 }
 exports.isGeneratorObject = isGeneratorObject;
 /**
- * Determines if value is actually a Int8Array.
+ * Determines if value is actually of type `Int8Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -262,7 +262,7 @@ function isInt8Array(value) {
 }
 exports.isInt8Array = isInt8Array;
 /**
- * Determines if value is actually a Int16Array.
+ * Determines if value is actually of type `Int16Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -271,7 +271,7 @@ function isInt16Array(value) {
 }
 exports.isInt16Array = isInt16Array;
 /**
- * Determines if value is actually a isInt32Array.
+ * Determines if value is actually of type `Int32Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -280,7 +280,7 @@ function isInt32Array(value) {
 }
 exports.isInt32Array = isInt32Array;
 /**
- * Determines if value is actually a Map.
+ * Determines if value is actually of type `Map`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -289,7 +289,7 @@ function isMap(value) {
 }
 exports.isMap = isMap;
 /**
- * Determines if value is actually a Map Iterator.
+ * Determines if value is actually of type `Map Iterator`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -298,7 +298,7 @@ function isMapIterator(value) {
 }
 exports.isMapIterator = isMapIterator;
 /**
- * Determines if value is actually a Module namespace object.
+ * Determines if value is actually a `Module` namespace object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -307,7 +307,15 @@ function isModuleNamespaceObject(value) {
 }
 exports.isModuleNamespaceObject = isModuleNamespaceObject;
 /**
- * Determines if value is actually a native Error.
+ * Determines if value is actually one of the native Error types:
+ * - `EvalError`
+ * - `RangeError`
+ * - `ReferenceError`
+ * - `SyntaxError`
+ * - `TypeError`
+ * - `URIError`
+ * - `AggregateError`
+ * - `InternalError`
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -316,7 +324,7 @@ function isNativeError(value) {
 }
 exports.isNativeError = isNativeError;
 /**
- * Determines if value is actually a Number object.
+ * Determines if value is actually a `Number` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -325,7 +333,7 @@ function isNumberObject(value) {
 }
 exports.isNumberObject = isNumberObject;
 /**
- * Determines if value is actually a BigInt object.
+ * Determines if value is actually a `BigInt` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -334,7 +342,7 @@ function isBigIntObject(value) {
 }
 exports.isBigIntObject = isBigIntObject;
 /**
- * Determines if value is actually a Promise.
+ * Determines if value is actually of type `Promise`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -343,7 +351,7 @@ function isPromise(value) {
 }
 exports.isPromise = isPromise;
 /**
- * Determines if value is actually a RegExp.
+ * Determines if value is actually of type `RegExp`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -352,7 +360,7 @@ function isRegExp(value) {
 }
 exports.isRegExp = isRegExp;
 /**
- * Determines if value is actually a Set.
+ * Determines if value is actually of type `Set`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -361,7 +369,7 @@ function isSet(value) {
 }
 exports.isSet = isSet;
 /**
- * Determines if value is actually a Set Iterator.
+ * Determines if value is actually of type `Set Iterator`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -370,7 +378,7 @@ function isSetIterator(value) {
 }
 exports.isSetIterator = isSetIterator;
 /**
- * Determines if value is actually a SharedArrayBuffer.
+ * Determines if value is actually of type `SharedArrayBuffer`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -380,7 +388,7 @@ function isSharedArrayBuffer(value) {
 }
 exports.isSharedArrayBuffer = isSharedArrayBuffer;
 /**
- * Determines if value is actually a String object.
+ * Determines if value is actually a `String` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -389,7 +397,7 @@ function isStringObject(value) {
 }
 exports.isStringObject = isStringObject;
 /**
- * Determines if value is actually a Symbol object.
+ * Determines if value is actually a `Symbol` object.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -399,18 +407,28 @@ function isSymbolObject(value) {
 exports.isSymbolObject = isSymbolObject;
 // Adapted from Lodash
 /**
- * Determines if value is one of the typed arrays.
+ * Determines if value is one of the typed arrays:
+ * - `Float32Array`
+ * - `Float64Array`
+ * - `Int8Array`
+ * - `Uint8Array`
+ * - `Int16Array`
+ * - `Uint16Array`
+ * - `Int32Array`
+ * - `Uint32Array`
+ * - `Uint8ClampedArray`
+ *
  * @param {unknown} value
  * @returns {boolean}
  */
 function isTypedArray(value) {
-    /** Used to match `toStringTag` values of typed arrays. */
+    // Used to match `toStringTag` values of typed arrays.
     const reTypedTag = /^\[object (?:Float(?:32|64)|(?:Int|Uint)(?:8|16|32)|Uint8Clamped)Array\]$/;
     return _isObjectLike(value) && reTypedTag.test(toString(value));
 }
 exports.isTypedArray = isTypedArray;
 /**
- * Determines if value is actually a Uint8Array.
+ * Determines if value is actually of type `Uint8Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -419,7 +437,7 @@ function isUint8Array(value) {
 }
 exports.isUint8Array = isUint8Array;
 /**
- * Determines if value is actually a Uint8ClampedArray.
+ * Determines if value is actually of type `Uint8ClampedArray`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -429,7 +447,7 @@ function isUint8ClampedArray(value) {
 }
 exports.isUint8ClampedArray = isUint8ClampedArray;
 /**
- * Determines if value is actually a Uint16Array.
+ * Determines if value is actually of type `Uint16Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -438,7 +456,7 @@ function isUint16Array(value) {
 }
 exports.isUint16Array = isUint16Array;
 /**
- * Determines if value is actually a Uint32Array.
+ * Determines if value is actually of type `Uint32Array`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -447,7 +465,7 @@ function isUint32Array(value) {
 }
 exports.isUint32Array = isUint32Array;
 /**
- * Determines if value is actually a WeakMap.
+ * Determines if value is actually of type `WeakMap`.
  * @param {unknown} value
  * @returns {boolean}
  */
@@ -456,7 +474,7 @@ function isWeakMap(value) {
 }
 exports.isWeakMap = isWeakMap;
 /**
- * Determines if value is actually a WeakSet.
+ * Determines if value is actually of type `WeakSet`.
  * @param {unknown} value
  * @returns {boolean}
  */

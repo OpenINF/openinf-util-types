@@ -62,145 +62,160 @@ if (isObject(maybeObject)) {
 <dd><p>Returns the ECMA [[Class]] of a value.</p>
 </dd>
 <dt><a href="#isArray">isArray(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an Array.</p>
+<dd><p>Determines if value is actually of type <code>Array</code>.</p>
 </dd>
 <dt><a href="#toArray">toArray(arrayLike)</a> ⇒ <code>Array.&lt;T&gt;</code></dt>
 <dd><p>Converts an array-like object to an array.</p>
 </dd>
 <dt><a href="#isObject">isObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an Object.</p>
+<dd><p>Determines if value is actually of type <code>Object</code>.</p>
 </dd>
 <dt><a href="#isFiniteNumber">isFiniteNumber(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines if value is of number type and finite.
-NaN and Infinity are not considered a finite number.
+<code>NaN</code> and <code>Infinity</code> are not considered a finite number.
 String numbers are not considered numbers.</p>
 </dd>
-<dt><a href="#_isObjectLike">_isObjectLike(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually object-like.</p>
-</dd>
-<dt><a href="#_isFunctionLike">_isFunctionLike(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually function-like.</p>
-</dd>
 <dt><a href="#isAnyArrayBuffer">isAnyArrayBuffer(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an ArrayBuffer or SharedArrayBuffer.</p>
+<dd><p>Determines if value is actually of type <code>ArrayBuffer</code> or <code>SharedArrayBuffer</code>.</p>
 </dd>
 <dt><a href="#isArrayBufferView">isArrayBufferView(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an ArrayBufferView.</p>
+<dd><p>Determines if value is actually an <a href="https://developer.mozilla.org/en-US/docs/Web/API/ArrayBufferView"><code>ArrayBufferView</code></a>.</p>
 </dd>
 <dt><a href="#isArgumentsObject">isArgumentsObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an Arguments object.</p>
+<dd><p>Determines if value is actually an <code>Arguments</code> object.</p>
 </dd>
 <dt><a href="#isArrayBuffer">isArrayBuffer(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an ArrayBuffer.</p>
+<dd><p>Determines if value is actually of type <code>ArrayBuffer</code>.</p>
 </dd>
 <dt><a href="#isAsyncFunction">isAsyncFunction(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually an AsyncFunction.</p>
+<dd><p>Determines if value is actually of type <code>AsyncFunction</code>.</p>
 </dd>
 <dt><a href="#isBigInt64Array">isBigInt64Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a BigInt64Array.</p>
+<dd><p>Determines if value is actually of type <code>BigInt64Array</code>.</p>
 </dd>
 <dt><a href="#isBigUint64Array">isBigUint64Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a BigUint64Array.</p>
+<dd><p>Determines if value is actually of type <code>BigUint64Array</code>.</p>
 </dd>
 <dt><a href="#isBooleanObject">isBooleanObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Boolean object.</p>
+<dd><p>Determines if value is actually a <code>Boolean</code> object.</p>
 </dd>
 <dt><a href="#isBoxedPrimitive">isBoxedPrimitive(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines if value is actually one of the boxed primitives:</p>
 <ul>
-<li>Boolean</li>
-<li>String</li>
-<li>Number</li>
-<li>Symbol</li>
-<li>BigInt</li>
+<li><code>Boolean</code></li>
+<li><code>String</code></li>
+<li><code>Number</code></li>
+<li><code>Symbol</code></li>
+<li><code>BigInt</code></li>
 </ul>
 </dd>
 <dt><a href="#isDataView">isDataView(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a DataView.</p>
+<dd><p>Determines if value is actually of type <code>DataView</code>.</p>
 </dd>
 <dt><a href="#isDate">isDate(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Date.</p>
+<dd><p>Determines if value is actually of type <code>Date</code>.</p>
 </dd>
 <dt><a href="#isFloat32Array">isFloat32Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Float32Array.</p>
+<dd><p>Determines if value is actually of type <code>Float32Array</code>.</p>
 </dd>
 <dt><a href="#isFloat64Array">isFloat64Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Float64Array.</p>
+<dd><p>Determines if value is actually of type <code>Float64Array</code>.</p>
 </dd>
 <dt><a href="#isGeneratorFunction">isGeneratorFunction(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a GeneratorFunction.</p>
+<dd><p>Determines if value is actually of type <code>GeneratorFunction</code>.</p>
 </dd>
 <dt><a href="#isGeneratorObject">isGeneratorObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Generator object.</p>
+<dd><p>Determines if value is actually a <code>Generator</code> object.</p>
 </dd>
 <dt><a href="#isInt8Array">isInt8Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Int8Array.</p>
+<dd><p>Determines if value is actually of type <code>Int8Array</code>.</p>
 </dd>
 <dt><a href="#isInt16Array">isInt16Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Int16Array.</p>
+<dd><p>Determines if value is actually of type <code>Int16Array</code>.</p>
 </dd>
 <dt><a href="#isInt32Array">isInt32Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a isInt32Array.</p>
+<dd><p>Determines if value is actually of type <code>Int32Array</code>.</p>
 </dd>
 <dt><a href="#isMap">isMap(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Map.</p>
+<dd><p>Determines if value is actually of type <code>Map</code>.</p>
 </dd>
 <dt><a href="#isMapIterator">isMapIterator(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Map Iterator.</p>
+<dd><p>Determines if value is actually of type <code>Map Iterator</code>.</p>
 </dd>
 <dt><a href="#isModuleNamespaceObject">isModuleNamespaceObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Module namespace object.</p>
+<dd><p>Determines if value is actually a <code>Module</code> namespace object.</p>
 </dd>
 <dt><a href="#isNativeError">isNativeError(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a native Error.</p>
+<dd><p>Determines if value is actually one of the native Error types:</p>
+<ul>
+<li><code>EvalError</code></li>
+<li><code>RangeError</code></li>
+<li><code>ReferenceError</code></li>
+<li><code>SyntaxError</code></li>
+<li><code>TypeError</code></li>
+<li><code>URIError</code></li>
+<li><code>AggregateError</code></li>
+<li><code>InternalError</code></li>
+</ul>
 </dd>
 <dt><a href="#isNumberObject">isNumberObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Number object.</p>
+<dd><p>Determines if value is actually a <code>Number</code> object.</p>
 </dd>
 <dt><a href="#isBigIntObject">isBigIntObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a BigInt object.</p>
+<dd><p>Determines if value is actually a <code>BigInt</code> object.</p>
 </dd>
 <dt><a href="#isPromise">isPromise(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Promise.</p>
+<dd><p>Determines if value is actually of type <code>Promise</code>.</p>
 </dd>
 <dt><a href="#isRegExp">isRegExp(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a RegExp.</p>
+<dd><p>Determines if value is actually of type <code>RegExp</code>.</p>
 </dd>
 <dt><a href="#isSet">isSet(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Set.</p>
+<dd><p>Determines if value is actually of type <code>Set</code>.</p>
 </dd>
 <dt><a href="#isSetIterator">isSetIterator(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Set Iterator.</p>
+<dd><p>Determines if value is actually of type <code>Set Iterator</code>.</p>
 </dd>
 <dt><a href="#isSharedArrayBuffer">isSharedArrayBuffer(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a SharedArrayBuffer.</p>
+<dd><p>Determines if value is actually of type <code>SharedArrayBuffer</code>.</p>
 </dd>
 <dt><a href="#isStringObject">isStringObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a String object.</p>
+<dd><p>Determines if value is actually a <code>String</code> object.</p>
 </dd>
 <dt><a href="#isSymbolObject">isSymbolObject(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Symbol object.</p>
+<dd><p>Determines if value is actually a <code>Symbol</code> object.</p>
 </dd>
 <dt><a href="#isTypedArray">isTypedArray(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is one of the typed arrays.</p>
+<dd><p>Determines if value is one of the typed arrays:</p>
+<ul>
+<li><code>Float32Array</code></li>
+<li><code>Float64Array</code></li>
+<li><code>Int8Array</code></li>
+<li><code>Uint8Array</code></li>
+<li><code>Int16Array</code></li>
+<li><code>Uint16Array</code></li>
+<li><code>Int32Array</code></li>
+<li><code>Uint32Array</code></li>
+<li><code>Uint8ClampedArray</code></li>
+</ul>
 </dd>
 <dt><a href="#isUint8Array">isUint8Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Uint8Array.</p>
+<dd><p>Determines if value is actually of type <code>Uint8Array</code>.</p>
 </dd>
 <dt><a href="#isUint8ClampedArray">isUint8ClampedArray(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Uint8ClampedArray.</p>
+<dd><p>Determines if value is actually of type <code>Uint8ClampedArray</code>.</p>
 </dd>
 <dt><a href="#isUint16Array">isUint16Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Uint16Array.</p>
+<dd><p>Determines if value is actually of type <code>Uint16Array</code>.</p>
 </dd>
 <dt><a href="#isUint32Array">isUint32Array(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a Uint32Array.</p>
+<dd><p>Determines if value is actually of type <code>Uint32Array</code>.</p>
 </dd>
 <dt><a href="#isWeakMap">isWeakMap(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a WeakMap.</p>
+<dd><p>Determines if value is actually of type <code>WeakMap</code>.</p>
 </dd>
 <dt><a href="#isWeakSet">isWeakSet(value)</a> ⇒ <code>boolean</code></dt>
-<dd><p>Determines if value is actually a WeakSet.</p>
+<dd><p>Determines if value is actually of type <code>WeakSet</code>.</p>
 </dd>
 </dl>
 
@@ -218,7 +233,7 @@ Returns the ECMA [[Class]] of a value.
 <a name="isArray"></a>
 
 ## isArray(value) ⇒ <code>boolean</code>
-Determines if value is actually an Array.
+Determines if value is actually of type `Array`.
 
 **Kind**: global function  
 
@@ -240,7 +255,7 @@ Converts an array-like object to an array.
 <a name="isObject"></a>
 
 ## isObject(value) ⇒ <code>boolean</code>
-Determines if value is actually an Object.
+Determines if value is actually of type `Object`.
 
 **Kind**: global function  
 
@@ -252,7 +267,7 @@ Determines if value is actually an Object.
 
 ## isFiniteNumber(value) ⇒ <code>boolean</code>
 Determines if value is of number type and finite.
-NaN and Infinity are not considered a finite number.
+`NaN` and `Infinity` are not considered a finite number.
 String numbers are not considered numbers.
 
 **Kind**: global function  
@@ -261,34 +276,10 @@ String numbers are not considered numbers.
 | --- | --- |
 | value | <code>unknown</code> | 
 
-<a name="_isObjectLike"></a>
-
-## \_isObjectLike(value) ⇒ <code>boolean</code>
-Determines if value is actually object-like.
-
-**Kind**: global function  
-**Internal**:   
-
-| Param | Type |
-| --- | --- |
-| value | <code>unknown</code> | 
-
-<a name="_isFunctionLike"></a>
-
-## \_isFunctionLike(value) ⇒ <code>boolean</code>
-Determines if value is actually function-like.
-
-**Kind**: global function  
-**Internal**:   
-
-| Param | Type |
-| --- | --- |
-| value | <code>unknown</code> | 
-
 <a name="isAnyArrayBuffer"></a>
 
 ## isAnyArrayBuffer(value) ⇒ <code>boolean</code>
-Determines if value is actually an ArrayBuffer or SharedArrayBuffer.
+Determines if value is actually of type `ArrayBuffer` or `SharedArrayBuffer`.
 
 **Kind**: global function  
 
@@ -299,7 +290,7 @@ Determines if value is actually an ArrayBuffer or SharedArrayBuffer.
 <a name="isArrayBufferView"></a>
 
 ## isArrayBufferView(value) ⇒ <code>boolean</code>
-Determines if value is actually an ArrayBufferView.
+Determines if value is actually an [`ArrayBufferView`](https://developer.mozilla.org/en-US/docs/Web/API/ArrayBufferView).
 
 **Kind**: global function  
 
@@ -310,7 +301,7 @@ Determines if value is actually an ArrayBufferView.
 <a name="isArgumentsObject"></a>
 
 ## isArgumentsObject(value) ⇒ <code>boolean</code>
-Determines if value is actually an Arguments object.
+Determines if value is actually an `Arguments` object.
 
 **Kind**: global function  
 
@@ -321,7 +312,7 @@ Determines if value is actually an Arguments object.
 <a name="isArrayBuffer"></a>
 
 ## isArrayBuffer(value) ⇒ <code>boolean</code>
-Determines if value is actually an ArrayBuffer.
+Determines if value is actually of type `ArrayBuffer`.
 
 **Kind**: global function  
 
@@ -332,7 +323,7 @@ Determines if value is actually an ArrayBuffer.
 <a name="isAsyncFunction"></a>
 
 ## isAsyncFunction(value) ⇒ <code>boolean</code>
-Determines if value is actually an AsyncFunction.
+Determines if value is actually of type `AsyncFunction`.
 
 **Kind**: global function  
 
@@ -343,7 +334,7 @@ Determines if value is actually an AsyncFunction.
 <a name="isBigInt64Array"></a>
 
 ## isBigInt64Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a BigInt64Array.
+Determines if value is actually of type `BigInt64Array`.
 
 **Kind**: global function  
 
@@ -354,7 +345,7 @@ Determines if value is actually a BigInt64Array.
 <a name="isBigUint64Array"></a>
 
 ## isBigUint64Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a BigUint64Array.
+Determines if value is actually of type `BigUint64Array`.
 
 **Kind**: global function  
 
@@ -365,7 +356,7 @@ Determines if value is actually a BigUint64Array.
 <a name="isBooleanObject"></a>
 
 ## isBooleanObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a Boolean object.
+Determines if value is actually a `Boolean` object.
 
 **Kind**: global function  
 
@@ -377,11 +368,11 @@ Determines if value is actually a Boolean object.
 
 ## isBoxedPrimitive(value) ⇒ <code>boolean</code>
 Determines if value is actually one of the boxed primitives:
-- Boolean
-- String
-- Number
-- Symbol
-- BigInt
+- `Boolean`
+- `String`
+- `Number`
+- `Symbol`
+- `BigInt`
 
 **Kind**: global function  
 
@@ -392,7 +383,7 @@ Determines if value is actually one of the boxed primitives:
 <a name="isDataView"></a>
 
 ## isDataView(value) ⇒ <code>boolean</code>
-Determines if value is actually a DataView.
+Determines if value is actually of type `DataView`.
 
 **Kind**: global function  
 
@@ -403,7 +394,7 @@ Determines if value is actually a DataView.
 <a name="isDate"></a>
 
 ## isDate(value) ⇒ <code>boolean</code>
-Determines if value is actually a Date.
+Determines if value is actually of type `Date`.
 
 **Kind**: global function  
 
@@ -414,7 +405,7 @@ Determines if value is actually a Date.
 <a name="isFloat32Array"></a>
 
 ## isFloat32Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Float32Array.
+Determines if value is actually of type `Float32Array`.
 
 **Kind**: global function  
 
@@ -425,7 +416,7 @@ Determines if value is actually a Float32Array.
 <a name="isFloat64Array"></a>
 
 ## isFloat64Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Float64Array.
+Determines if value is actually of type `Float64Array`.
 
 **Kind**: global function  
 
@@ -436,7 +427,7 @@ Determines if value is actually a Float64Array.
 <a name="isGeneratorFunction"></a>
 
 ## isGeneratorFunction(value) ⇒ <code>boolean</code>
-Determines if value is actually a GeneratorFunction.
+Determines if value is actually of type `GeneratorFunction`.
 
 **Kind**: global function  
 
@@ -447,7 +438,7 @@ Determines if value is actually a GeneratorFunction.
 <a name="isGeneratorObject"></a>
 
 ## isGeneratorObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a Generator object.
+Determines if value is actually a `Generator` object.
 
 **Kind**: global function  
 
@@ -458,7 +449,7 @@ Determines if value is actually a Generator object.
 <a name="isInt8Array"></a>
 
 ## isInt8Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Int8Array.
+Determines if value is actually of type `Int8Array`.
 
 **Kind**: global function  
 
@@ -469,7 +460,7 @@ Determines if value is actually a Int8Array.
 <a name="isInt16Array"></a>
 
 ## isInt16Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Int16Array.
+Determines if value is actually of type `Int16Array`.
 
 **Kind**: global function  
 
@@ -480,7 +471,7 @@ Determines if value is actually a Int16Array.
 <a name="isInt32Array"></a>
 
 ## isInt32Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a isInt32Array.
+Determines if value is actually of type `Int32Array`.
 
 **Kind**: global function  
 
@@ -491,7 +482,7 @@ Determines if value is actually a isInt32Array.
 <a name="isMap"></a>
 
 ## isMap(value) ⇒ <code>boolean</code>
-Determines if value is actually a Map.
+Determines if value is actually of type `Map`.
 
 **Kind**: global function  
 
@@ -502,7 +493,7 @@ Determines if value is actually a Map.
 <a name="isMapIterator"></a>
 
 ## isMapIterator(value) ⇒ <code>boolean</code>
-Determines if value is actually a Map Iterator.
+Determines if value is actually of type `Map Iterator`.
 
 **Kind**: global function  
 
@@ -513,7 +504,7 @@ Determines if value is actually a Map Iterator.
 <a name="isModuleNamespaceObject"></a>
 
 ## isModuleNamespaceObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a Module namespace object.
+Determines if value is actually a `Module` namespace object.
 
 **Kind**: global function  
 
@@ -524,7 +515,15 @@ Determines if value is actually a Module namespace object.
 <a name="isNativeError"></a>
 
 ## isNativeError(value) ⇒ <code>boolean</code>
-Determines if value is actually a native Error.
+Determines if value is actually one of the native Error types:
+- `EvalError`
+- `RangeError`
+- `ReferenceError`
+- `SyntaxError`
+- `TypeError`
+- `URIError`
+- `AggregateError`
+- `InternalError`
 
 **Kind**: global function  
 
@@ -535,7 +534,7 @@ Determines if value is actually a native Error.
 <a name="isNumberObject"></a>
 
 ## isNumberObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a Number object.
+Determines if value is actually a `Number` object.
 
 **Kind**: global function  
 
@@ -546,7 +545,7 @@ Determines if value is actually a Number object.
 <a name="isBigIntObject"></a>
 
 ## isBigIntObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a BigInt object.
+Determines if value is actually a `BigInt` object.
 
 **Kind**: global function  
 
@@ -557,7 +556,7 @@ Determines if value is actually a BigInt object.
 <a name="isPromise"></a>
 
 ## isPromise(value) ⇒ <code>boolean</code>
-Determines if value is actually a Promise.
+Determines if value is actually of type `Promise`.
 
 **Kind**: global function  
 
@@ -568,7 +567,7 @@ Determines if value is actually a Promise.
 <a name="isRegExp"></a>
 
 ## isRegExp(value) ⇒ <code>boolean</code>
-Determines if value is actually a RegExp.
+Determines if value is actually of type `RegExp`.
 
 **Kind**: global function  
 
@@ -579,7 +578,7 @@ Determines if value is actually a RegExp.
 <a name="isSet"></a>
 
 ## isSet(value) ⇒ <code>boolean</code>
-Determines if value is actually a Set.
+Determines if value is actually of type `Set`.
 
 **Kind**: global function  
 
@@ -590,7 +589,7 @@ Determines if value is actually a Set.
 <a name="isSetIterator"></a>
 
 ## isSetIterator(value) ⇒ <code>boolean</code>
-Determines if value is actually a Set Iterator.
+Determines if value is actually of type `Set Iterator`.
 
 **Kind**: global function  
 
@@ -601,7 +600,7 @@ Determines if value is actually a Set Iterator.
 <a name="isSharedArrayBuffer"></a>
 
 ## isSharedArrayBuffer(value) ⇒ <code>boolean</code>
-Determines if value is actually a SharedArrayBuffer.
+Determines if value is actually of type `SharedArrayBuffer`.
 
 **Kind**: global function  
 
@@ -612,7 +611,7 @@ Determines if value is actually a SharedArrayBuffer.
 <a name="isStringObject"></a>
 
 ## isStringObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a String object.
+Determines if value is actually a `String` object.
 
 **Kind**: global function  
 
@@ -623,7 +622,7 @@ Determines if value is actually a String object.
 <a name="isSymbolObject"></a>
 
 ## isSymbolObject(value) ⇒ <code>boolean</code>
-Determines if value is actually a Symbol object.
+Determines if value is actually a `Symbol` object.
 
 **Kind**: global function  
 
@@ -634,7 +633,16 @@ Determines if value is actually a Symbol object.
 <a name="isTypedArray"></a>
 
 ## isTypedArray(value) ⇒ <code>boolean</code>
-Determines if value is one of the typed arrays.
+Determines if value is one of the typed arrays:
+- `Float32Array`
+- `Float64Array`
+- `Int8Array`
+- `Uint8Array`
+- `Int16Array`
+- `Uint16Array`
+- `Int32Array`
+- `Uint32Array`
+- `Uint8ClampedArray`
 
 **Kind**: global function  
 
@@ -642,16 +650,10 @@ Determines if value is one of the typed arrays.
 | --- | --- |
 | value | <code>unknown</code> | 
 
-<a name="isTypedArray..reTypedTag"></a>
-
-### isTypedArray~reTypedTag
-Used to match `toStringTag` values of typed arrays.
-
-**Kind**: inner constant of [<code>isTypedArray</code>](#isTypedArray)  
 <a name="isUint8Array"></a>
 
 ## isUint8Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Uint8Array.
+Determines if value is actually of type `Uint8Array`.
 
 **Kind**: global function  
 
@@ -662,7 +664,7 @@ Determines if value is actually a Uint8Array.
 <a name="isUint8ClampedArray"></a>
 
 ## isUint8ClampedArray(value) ⇒ <code>boolean</code>
-Determines if value is actually a Uint8ClampedArray.
+Determines if value is actually of type `Uint8ClampedArray`.
 
 **Kind**: global function  
 
@@ -673,7 +675,7 @@ Determines if value is actually a Uint8ClampedArray.
 <a name="isUint16Array"></a>
 
 ## isUint16Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Uint16Array.
+Determines if value is actually of type `Uint16Array`.
 
 **Kind**: global function  
 
@@ -684,7 +686,7 @@ Determines if value is actually a Uint16Array.
 <a name="isUint32Array"></a>
 
 ## isUint32Array(value) ⇒ <code>boolean</code>
-Determines if value is actually a Uint32Array.
+Determines if value is actually of type `Uint32Array`.
 
 **Kind**: global function  
 
@@ -695,7 +697,7 @@ Determines if value is actually a Uint32Array.
 <a name="isWeakMap"></a>
 
 ## isWeakMap(value) ⇒ <code>boolean</code>
-Determines if value is actually a WeakMap.
+Determines if value is actually of type `WeakMap`.
 
 **Kind**: global function  
 
@@ -706,7 +708,7 @@ Determines if value is actually a WeakMap.
 <a name="isWeakSet"></a>
 
 ## isWeakSet(value) ⇒ <code>boolean</code>
-Determines if value is actually a WeakSet.
+Determines if value is actually of type `WeakSet`.
 
 **Kind**: global function  
 
