@@ -57,7 +57,7 @@ export declare function isArgumentsObject(value: unknown): boolean;
  * Determines whether the passed value is of type `ArrayBuffer`.
  * @param {unknown} value The value to be checked.
  * @returns {boolean} `true` if the value is an `ArrayBuffer`; otherwise,
- *  false`.
+ *     `false`.
  */
 export declare function isArrayBuffer(value: unknown): boolean;
 /**

@@ -331,7 +331,7 @@ Determines whether the passed value is of type `ArrayBuffer`.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `ArrayBuffer`; otherwise,
- false`.  
+    `false`.  
 
 | Param | Type | Description |
 | --- | --- | --- |

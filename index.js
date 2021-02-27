@@ -141,7 +141,7 @@ exports.isArgumentsObject = isArgumentsObject;
  * Determines whether the passed value is of type `ArrayBuffer`.
  * @param {unknown} value The value to be checked.
  * @returns {boolean} `true` if the value is an `ArrayBuffer`; otherwise,
- *  false`.
+ *     `false`.
  */
 function isArrayBuffer(value) {
     return (_isObjectLike(value) && toString(value) === "[object ArrayBuffer]");
