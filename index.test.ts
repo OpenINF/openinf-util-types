@@ -33,6 +33,7 @@ import {
   isDate,
   isFloat32Array,
   isFloat64Array,
+  isOrdinaryFunction,
   isGeneratorFunction,
   isGeneratorObject,
   isInt16Array,
@@ -356,6 +357,32 @@ test("should yield false for invalid Float64Array types", (t) => {
   t.strictEquals(isFloat64Array(new Uint8Array(0)), false);
   t.end();
 });
+
+// isOrdinaryFunction
+test("should yield true for valid ordinary functions", (t) => {
+  t.strictEquals(
+    isOrdinaryFunction(function foo() {}),
+    true,
+  );
+  t.end();
+});
+
+test("should yield false for invalid ordinary functions", (t) => {
+  t.strictEquals(
+    isOrdinaryFunction(function* foo() {}),
+    false,
+  );
+  t.strictEquals(
+    isOrdinaryFunction(async function foo() {}),
+    false,
+  );
+  t.strictEquals(
+    isOrdinaryFunction(async function* foo() {}),
+    false,
+  );
+  t.end();
+});
+
 
 // isGeneratorFunction
 test("should yield true for valid generator functions", (t) => {

@@ -254,6 +254,18 @@ export function isFloat64Array(value: unknown): boolean {
 }
 
 /**
+ * Determines if value is actually of type `Function`.
+ * @param {unknown} value
+ * @returns {boolean}
+ */
+export function isOrdinaryFunction(value: unknown): boolean {
+  return (
+    _isFunctionLike(value) &&
+    toString(value) === "[object Function]"
+  );
+}
+
+/**
  * Determines if value is actually of type `GeneratorFunction`.
  * @param {unknown} value
  * @returns {boolean}
