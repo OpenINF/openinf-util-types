@@ -18,9 +18,9 @@
 const _toString = Object.prototype.toString;
 
 /**
- * Returns the ECMA [[Class]] of a value.
+ * Returns the ECMAScript [[Class]] internal property of a value.
  * @param {unknown} value
- * @returns {string}
+ * @returns {string} A specification-defined classification of objects.
  */
 export function toString(value: unknown): string {
   return _toString.call(value);
