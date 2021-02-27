@@ -16,12 +16,12 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isWeakSet = exports.isWeakMap = exports.isUint32Array = exports.isUint16Array = exports.isUint8ClampedArray = exports.isUint8Array = exports.isTypedArray = exports.isSymbolObject = exports.isStringObject = exports.isSharedArrayBuffer = exports.isSetIterator = exports.isSet = exports.isRegExp = exports.isPromise = exports.isBigIntObject = exports.isNumberObject = exports.isNativeError = exports.isModuleNamespaceObject = exports.isMapIterator = exports.isMap = exports.isInt32Array = exports.isInt16Array = exports.isInt8Array = exports.isGeneratorObject = exports.isGeneratorFunction = exports.isFloat64Array = exports.isFloat32Array = exports.isDate = exports.isDataView = exports.isBoxedPrimitive = exports.isBooleanObject = exports.isBigUint64Array = exports.isBigInt64Array = exports.isAsyncFunction = exports.isArrayBuffer = exports.isArgumentsObject = exports.isArrayBufferView = exports.isAnyArrayBuffer = exports.isFiniteNumber = exports.isObject = exports.toArray = exports.isArray = exports.toString = void 0;
+exports.isWeakSet = exports.isWeakMap = exports.isUint32Array = exports.isUint16Array = exports.isUint8ClampedArray = exports.isUint8Array = exports.isTypedArray = exports.isSymbolObject = exports.isStringObject = exports.isSharedArrayBuffer = exports.isSetIterator = exports.isSet = exports.isRegExp = exports.isPromise = exports.isBigIntObject = exports.isNumberObject = exports.isNativeError = exports.isModuleNamespaceObject = exports.isMapIterator = exports.isMap = exports.isInt32Array = exports.isInt16Array = exports.isInt8Array = exports.isGeneratorObject = exports.isGeneratorFunction = exports.isOrdinaryFunction = exports.isFloat64Array = exports.isFloat32Array = exports.isDate = exports.isDataView = exports.isBoxedPrimitive = exports.isBooleanObject = exports.isBigUint64Array = exports.isBigInt64Array = exports.isAsyncFunction = exports.isArrayBuffer = exports.isArgumentsObject = exports.isArrayBufferView = exports.isAnyArrayBuffer = exports.isFiniteNumber = exports.isObject = exports.toArray = exports.isArray = exports.toString = void 0;
 const _toString = Object.prototype.toString;
 /**
- * Returns the ECMA [[Class]] of a value.
+ * Returns the ECMAScript [[Class]] internal property of a value.
  * @param {unknown} value
- * @returns {string}
+ * @returns {string} A specification-defined classification of objects.
  */
 function toString(value) {
     return _toString.call(value);
@@ -233,6 +233,16 @@ function isFloat64Array(value) {
     return (_isObjectLike(value) && toString(value) === "[object Float64Array]");
 }
 exports.isFloat64Array = isFloat64Array;
+/**
+ * Determines if value is actually of type `Function`.
+ * @param {unknown} value
+ * @returns {boolean}
+ */
+function isOrdinaryFunction(value) {
+    return (_isFunctionLike(value) &&
+        toString(value) === "[object Function]");
+}
+exports.isOrdinaryFunction = isOrdinaryFunction;
 /**
  * Determines if value is actually of type `GeneratorFunction`.
  * @param {unknown} value

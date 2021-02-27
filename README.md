@@ -59,7 +59,7 @@ if (isObject(maybeObject)) {
 
 <dl>
 <dt><a href="#toString">toString(value)</a> ⇒ <code>string</code></dt>
-<dd><p>Returns the ECMA [[Class]] of a value.</p>
+<dd><p>Returns the ECMAScript [[Class]] internal property of a value.</p>
 </dd>
 <dt><a href="#isArray">isArray(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines if value is actually of type <code>Array</code>.</p>
@@ -120,6 +120,9 @@ String numbers are not considered numbers.</p>
 </dd>
 <dt><a href="#isFloat64Array">isFloat64Array(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines if value is actually of type <code>Float64Array</code>.</p>
+</dd>
+<dt><a href="#isOrdinaryFunction">isOrdinaryFunction(value)</a> ⇒ <code>boolean</code></dt>
+<dd><p>Determines if value is actually of type <code>Function</code>.</p>
 </dd>
 <dt><a href="#isGeneratorFunction">isGeneratorFunction(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines if value is actually of type <code>GeneratorFunction</code>.</p>
@@ -222,9 +225,10 @@ String numbers are not considered numbers.</p>
 <a name="toString"></a>
 
 ## toString(value) ⇒ <code>string</code>
-Returns the ECMA [[Class]] of a value.
+Returns the ECMAScript [[Class]] internal property of a value.
 
 **Kind**: global function  
+**Returns**: <code>string</code> - A specification-defined classification of objects.  
 
 | Param | Type |
 | --- | --- |
@@ -417,6 +421,17 @@ Determines if value is actually of type `Float32Array`.
 
 ## isFloat64Array(value) ⇒ <code>boolean</code>
 Determines if value is actually of type `Float64Array`.
+
+**Kind**: global function  
+
+| Param | Type |
+| --- | --- |
+| value | <code>unknown</code> | 
+
+<a name="isOrdinaryFunction"></a>
+
+## isOrdinaryFunction(value) ⇒ <code>boolean</code>
+Determines if value is actually of type `Function`.
 
 **Kind**: global function  
 

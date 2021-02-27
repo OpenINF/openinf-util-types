@@ -281,6 +281,17 @@ tape_1.default("should yield false for invalid Float64Array types", (t) => {
     t.strictEquals(index_1.isFloat64Array(new Uint8Array(0)), false);
     t.end();
 });
+// isOrdinaryFunction
+tape_1.default("should yield true for valid ordinary functions", (t) => {
+    t.strictEquals(index_1.isOrdinaryFunction(function foo() { }), true);
+    t.end();
+});
+tape_1.default("should yield false for invalid ordinary functions", (t) => {
+    t.strictEquals(index_1.isOrdinaryFunction(function* foo() { }), false);
+    t.strictEquals(index_1.isOrdinaryFunction(async function foo() { }), false);
+    t.strictEquals(index_1.isOrdinaryFunction(async function* foo() { }), false);
+    t.end();
+});
 // isGeneratorFunction
 tape_1.default("should yield true for valid generator functions", (t) => {
     t.strictEquals(index_1.isGeneratorFunction(function* foo() { }), true);

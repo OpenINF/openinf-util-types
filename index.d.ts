@@ -1,7 +1,7 @@
 /**
- * Returns the ECMA [[Class]] of a value.
+ * Returns the ECMAScript [[Class]] internal property of a value.
  * @param {unknown} value
- * @returns {string}
+ * @returns {string} A specification-defined classification of objects.
  */
 export declare function toString(value: unknown): string;
 /**
@@ -115,6 +115,12 @@ export declare function isFloat32Array(value: unknown): boolean;
  * @returns {boolean}
  */
 export declare function isFloat64Array(value: unknown): boolean;
+/**
+ * Determines if value is actually of type `Function`.
+ * @param {unknown} value
+ * @returns {boolean}
+ */
+export declare function isOrdinaryFunction(value: unknown): boolean;
 /**
  * Determines if value is actually of type `GeneratorFunction`.
  * @param {unknown} value
