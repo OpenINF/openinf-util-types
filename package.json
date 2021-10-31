@@ -27,7 +27,7 @@
   "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
     "@types/jsdom": "16.2.6",
-    "@types/tape": "4.13.0",
+    "@types/tape": "4.13.2",
     "jsdoc-to-markdown": "6.0.1",
     "jsdom": "16.4.0",
     "tape": "5.1.1",
