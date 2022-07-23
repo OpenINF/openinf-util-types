@@ -26,7 +26,7 @@
   "homepage": "https://github.com/openinf/util-types#readme",
   "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
-    "@types/jsdom": "16.2.15",
+    "@types/jsdom": "20.0.0",
     "@types/tape": "4.13.2",
     "jsdoc-to-markdown": "7.1.1",
     "jsdom": "20.0.0",
