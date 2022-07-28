@@ -1,0 +1,25 @@
+version = 1
+
+test_patterns = ["index.test.*"]
+
+exclude_patterns = ["*.js"]
+
+[[analyzers]]
+name = "shell"
+enabled = true
+
+[[analyzers]]
+name = "secrets"
+enabled = true
+
+[[analyzers]]
+name = "javascript"
+enabled = true
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[transformers]]
+name = "prettier"
+enabled = true
