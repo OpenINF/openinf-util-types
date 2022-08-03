@@ -217,7 +217,7 @@ export declare function isArray(value: unknown): boolean;
  * @returns {!Array<T>}
  * @template T
  */
-export declare function toArray<T>(arrayLike: (ArrayLike<T> | T)): Array<T>;
+export declare function toArray<T>(arrayLike: ArrayLike<T> | T): Array<T>;
 /**
  * Determines whether the passed value is of type [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array).
  * @param {unknown} value The value to be checked.

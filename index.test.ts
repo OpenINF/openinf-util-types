@@ -58,28 +58,28 @@ import {
   isUint8ClampedArray,
   isWeakMap,
   isWeakSet,
-} from './index';
-import test from 'tape';
+} from "./index";
+import test from "tape";
 
 // Used to test isModuleNamespaceObject
 // import * as testModuleNamespaceOpbject from "./index";
 
 // Used to test toArray
-import { JSDOM } from 'jsdom';
-const { document } = (new JSDOM(`<!DOCTYPE html>`)).window;
+import { JSDOM } from "jsdom";
+const { document } = new JSDOM(`<!DOCTYPE html>`).window;
 
 // toArray
-test('should return empty array if null is passed', (t) => {
+test("should return empty array if null is passed", (t) => {
   t.strictEquals(toArray(null).length, 0);
   t.strictEquals(toArray(undefined).length, 0);
   t.end();
 });
 
-test('should convert NodeList to array', (t) => {
-  const parent = document.createElement('div');
-  parent.appendChild(document.createElement('p'));
-  parent.appendChild(document.createElement('span'));
-  parent.appendChild(document.createElement('div'));
+test("should convert NodeList to array", (t) => {
+  const parent = document.createElement("div");
+  parent.appendChild(document.createElement("p"));
+  parent.appendChild(document.createElement("span"));
+  parent.appendChild(document.createElement("div"));
   const arr = toArray(parent.childNodes);
   t.strictEquals(arr[0], parent.childNodes[0]);
   t.strictEquals(arr.length, 3);
@@ -87,25 +87,25 @@ test('should convert NodeList to array', (t) => {
   t.end();
 });
 
-test('should convert HTMLCollection to array', (t) => {
-  const parent = document.createElement('div');
-  parent.appendChild(document.createElement('form'));
-  parent.appendChild(document.createElement('form'));
+test("should convert HTMLCollection to array", (t) => {
+  const parent = document.createElement("div");
+  parent.appendChild(document.createElement("form"));
+  parent.appendChild(document.createElement("form"));
   document.body.appendChild(parent);
   const arr = toArray(document.forms);
   t.strictEquals(arr[0], document.forms[0]);
   t.strictEquals(arr.length, 2);
-  t.strictEquals(Array.isArray(arr), true)
+  t.strictEquals(Array.isArray(arr), true);
   document.body.removeChild(parent);
   t.end();
 });
 
-test('should convert HTMLOptionsCollection to array', (t) => {
-  const parent = document.createElement('select');
-  parent.appendChild(document.createElement('option'));
-  parent.appendChild(document.createElement('option'));
-  parent.appendChild(document.createElement('option'));
-  parent.appendChild(document.createElement('option'));
+test("should convert HTMLOptionsCollection to array", (t) => {
+  const parent = document.createElement("select");
+  parent.appendChild(document.createElement("option"));
+  parent.appendChild(document.createElement("option"));
+  parent.appendChild(document.createElement("option"));
+  parent.appendChild(document.createElement("option"));
   const arr = toArray(parent.options);
   t.strictEquals(arr[0], parent.options[0]);
   t.strictEquals(arr.length, 4);
@@ -122,27 +122,27 @@ test("should yield true for valid Object types", (t) => {
 
 test("should yield false for invalid Object types", (t) => {
   t.strictEquals(isObject(3), false);
-  t.strictEquals(isObject('2'), false);
+  t.strictEquals(isObject("2"), false);
   t.strictEquals(isObject(true), false);
   t.end();
 });
 
 // isFiniteNumber
-test('should yield false for non-numbers', (t) => {
+test("should yield false for non-numbers", (t) => {
   t.strictEquals(isFiniteNumber(null), false);
   t.strictEquals(isFiniteNumber(undefined), false);
-  t.strictEquals(isFiniteNumber(''), false);
-  t.strictEquals(isFiniteNumber('2'), false);
+  t.strictEquals(isFiniteNumber(""), false);
+  t.strictEquals(isFiniteNumber("2"), false);
   t.strictEquals(isFiniteNumber([]), false);
   t.strictEquals(isFiniteNumber([2]), false);
   t.strictEquals(isFiniteNumber({}), false);
-  t.strictEquals(isFiniteNumber({'a': 2}), false);
+  t.strictEquals(isFiniteNumber({ a: 2 }), false);
   t.strictEquals(isFiniteNumber(true), false);
   t.strictEquals(isFiniteNumber(NaN), false);
   t.end();
 });
 
-test('should yield true for numbers', (t) => {
+test("should yield true for numbers", (t) => {
   t.strictEquals(isFiniteNumber(3), true);
   t.strictEquals(isFiniteNumber(3.2), true);
   t.strictEquals(isFiniteNumber(123e5), true);
@@ -362,7 +362,7 @@ test("should yield false for invalid Float64Array types", (t) => {
 test("should yield true for valid ordinary functions", (t) => {
   t.strictEquals(
     isOrdinaryFunction(function foo() {}),
-    true,
+    true
   );
   t.end();
 });
@@ -370,25 +370,24 @@ test("should yield true for valid ordinary functions", (t) => {
 test("should yield false for invalid ordinary functions", (t) => {
   t.strictEquals(
     isOrdinaryFunction(function* foo() {}),
-    false,
+    false
   );
   t.strictEquals(
     isOrdinaryFunction(async function foo() {}),
-    false,
+    false
   );
   t.strictEquals(
     isOrdinaryFunction(async function* foo() {}),
-    false,
+    false
   );
   t.end();
 });
-
 
 // isGeneratorFunction
 test("should yield true for valid generator functions", (t) => {
   t.strictEquals(
     isGeneratorFunction(function* foo() {}),
-    true,
+    true
   );
   t.end();
 });
@@ -396,7 +395,7 @@ test("should yield true for valid generator functions", (t) => {
 test("should yield false for invalid generator functions", (t) => {
   t.strictEquals(
     isGeneratorFunction(function foo() {}),
-    false,
+    false
   );
   t.end();
 });
@@ -411,7 +410,7 @@ test("should yield true for valid generator object types", (t) => {
 test("should yield false for invalid generation object types", (t) => {
   t.strictEquals(
     isGeneratorObject(function* foo() {}),
-    false,
+    false
   );
   t.end();
 });

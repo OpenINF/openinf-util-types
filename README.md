@@ -38,14 +38,14 @@ npm install @openinf/util-types
 Import the helper functions based on your platform.
 
 ```ts
-import { isObject } from '@openinf/util-types';
+import { isObject } from "@openinf/util-types";
 
 const maybeObject = null;
 
 if (isObject(maybeObject)) {
-  console.log('The value of `maybeObject` is of type Object.');
+  console.log("The value of `maybeObject` is of type Object.");
 } else {
-  console.log('The value of `maybeObject` is not of type Object.');
+  console.log("The value of `maybeObject` is not of type Object.");
 }
 ```
 
@@ -263,83 +263,91 @@ data type.</p>
 <a name="toString"></a>
 
 ## toString(value) ⇒ <code>string</code>
+
 Returns the ECMAScript [[Class]] internal property of the passed value.
 
 **Kind**: global function  
-**Returns**: <code>string</code> - A specification-defined classification of objects.  
+**Returns**: <code>string</code> - A specification-defined classification of objects.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isUndefined"></a>
 
 ## isUndefined(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually of type [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is `undefined`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is `undefined`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isObject"></a>
 
 ## isObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type `Object`.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is an `Object`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is an `Object`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isOrdinaryFunction"></a>
 
 ## isOrdinaryFunction(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type `Function`.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Function`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Function`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isBooleanObject"></a>
 
 ## isBooleanObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 object.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Boolean` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isSymbolObject"></a>
 
 ## isSymbolObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 object.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Symbol` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isNativeError"></a>
 
 ## isNativeError(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is one of the native error types:
+
 - [`EvalError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError)
 - [`RangeError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError)
 - [`ReferenceError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError)
@@ -350,276 +358,298 @@ Determines whether the passed value is one of the native error types:
 - [`InternalError`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError)
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a native error; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a native error; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isNumberObject"></a>
 
 ## isNumberObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 object (boxed primitive).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Number` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isBigIntObject"></a>
 
 ## isBigIntObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 object (boxed primitive).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `BigInt` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isFiniteNumber"></a>
 
 ## isFiniteNumber(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of number type and finite. `NaN` and
 `Infinity` are not considered a finite number. String numbers are not
 considered numbers.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a finite number; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isMath"></a>
 
 ## isMath(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually the [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 global object.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is the `Math` object; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is the `Math` object; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isDate"></a>
 
 ## isDate(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Date`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Date`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isStringObject"></a>
 
 ## isStringObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 object.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `String` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isRegExp"></a>
 
 ## isRegExp(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `RegExp`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `RegExp`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isArray"></a>
 
 ## isArray(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is an `Array`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is an `Array`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="toArray"></a>
 
 ## toArray(arrayLike) ⇒ <code>Array.&lt;T&gt;</code>
+
 Converts an array-like object to an array.
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type |
-| --- | --- |
-| arrayLike | <code>ArrayLike.&lt;T&gt;</code> \| <code>string</code> | 
+| Param     | Type                                                    |
+| --------- | ------------------------------------------------------- |
+| arrayLike | <code>ArrayLike.&lt;T&gt;</code> \| <code>string</code> |
 
 <a name="isInt8Array"></a>
 
 ## isInt8Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is an `Int8Array`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is an `Int8Array`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isUint8Array"></a>
 
 ## isUint8Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Uint8Array`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Uint8Array`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isUint8ClampedArray"></a>
 
 ## isUint8ClampedArray(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Uint8ClampedArray`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isInt16Array"></a>
 
 ## isInt16Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Int16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `Int16Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isUint16Array"></a>
 
 ## isUint16Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Uint16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Uint16Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isInt32Array"></a>
 
 ## isInt32Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Int32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `Int32Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isUint32Array"></a>
 
 ## isUint32Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Uint32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Uint32Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isFloat32Array"></a>
 
 ## isFloat32Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Float32Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isFloat64Array"></a>
 
 ## isFloat64Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Float64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Float64Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isBigInt64Array"></a>
 
 ## isBigInt64Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`BigInt64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `BigInt64Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isBigUint64Array"></a>
 
 ## isBigUint64Array(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`BigUint64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUInt64Array).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `BigUint64Array`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isArrayBufferView"></a>
 
 ## isArrayBufferView(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is an [`ArrayBufferView`](https://developer.mozilla.org/en-US/docs/Web/API/ArrayBufferView),
 which is a helper type representing any of the following JavaScript [**TypedArray**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
 types:
+
 - [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)
 - [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)
 - [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray)
@@ -633,16 +663,18 @@ types:
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `ArrayBufferView`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isTypedArray"></a>
 
 ## isTypedArray(value) ⇒ <code>boolean</code>
+
 Determines if value is one of the [**TypedArray** element types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#typedarray_objects):
+
 - [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array)
 - [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array)
 - [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray)
@@ -657,210 +689,227 @@ Determines if value is one of the [**TypedArray** element types](https://develop
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is one of the typed arrays; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isMap"></a>
 
 ## isMap(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Map`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Map`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isMapIterator"></a>
 
 ## isMapIterator(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Map Iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Map Iterator`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isSet"></a>
 
 ## isSet(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Set`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Set`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isSetIterator"></a>
 
 ## isSetIterator(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Set Iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/@@iterator).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `Set Iterator`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isWeakMap"></a>
 
 ## isWeakMap(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `WeakMap`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `WeakMap`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isWeakSet"></a>
 
 ## isWeakSet(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `WeakSet`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `WeakSet`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isArrayBuffer"></a>
 
 ## isArrayBuffer(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `ArrayBuffer`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isSharedArrayBuffer"></a>
 
 ## isSharedArrayBuffer(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `SharedArrayBuffer`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isAnyArrayBuffer"></a>
 
 ## isAnyArrayBuffer(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is one of either [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
 or [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is one of the array buffers;
-    otherwise, `false`.  
+otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isDataView"></a>
 
 ## isDataView(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `DataView`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `DataView`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isPromise"></a>
 
 ## isPromise(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Promise`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Promise`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isGeneratorObject"></a>
 
 ## isGeneratorObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually a [`Generator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
 object.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Generator`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Generator`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isGeneratorFunction"></a>
 
 ## isGeneratorFunction(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`GeneratorFunction`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is a `GeneratorFunction`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isAsyncFunction"></a>
 
 ## isAsyncFunction(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of type [`AsyncFunction`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction).
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `AsyncFunction`; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isArgumentsObject"></a>
 
 ## isArgumentsObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is actually an
 [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
 object.
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is an `arguments` object; otherwise,
-    `false`.  
+`false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isBoxedPrimitive"></a>
 
 ## isBoxedPrimitive(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is a primitive wrapped by its object
 equivalent (a.k.a. "boxed"). Except for `null` and `undefined`, all primitive
 values have object equivalents that wrap around the primitive values:
+
 - [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 - [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
@@ -869,38 +918,39 @@ values have object equivalents that wrap around the primitive values:
 
 **Kind**: global function  
 **Returns**: <code>boolean</code> - `true` if the value is one of the boxed primitives;
-    otherwise, `false`.  
-**See**: https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript  
+otherwise, `false`.  
+**See**: https://developer.mozilla.org/en-US/docs/Glossary/Primitive#primitive_wrapper_objects_in_javascript
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isModuleNamespaceObject"></a>
 
 ## isModuleNamespaceObject(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is a `Module` namespace object.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a `Module`; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a `Module`; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
 <a name="isPrimitive"></a>
 
 ## isPrimitive(value) ⇒ <code>boolean</code>
+
 Determines whether the passed value is of a [**primitive**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 data type.
 
 **Kind**: global function  
-**Returns**: <code>boolean</code> - `true` if the value is a primitive; otherwise, `false`.  
+**Returns**: <code>boolean</code> - `true` if the value is a primitive; otherwise, `false`.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type                 | Description              |
+| ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
-
 
 <br />
 

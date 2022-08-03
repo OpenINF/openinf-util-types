@@ -65,8 +65,9 @@ export function toString(value: unknown): string {
  * @private
  */
 export function _isObjectLike(value: unknown) {
-  return typeof value === "function" ||
-          (typeof value === "object" && value !== null);
+  return (
+    typeof value === "function" || (typeof value === "object" && value !== null)
+  );
 }
 
 /** ----------------------------------------------------------------------------
@@ -121,7 +122,7 @@ export function isUndefined(value: unknown): boolean {
  * @returns {boolean} `true` if the value is an `Object`; otherwise, `false`.
  */
 export function isObject(value: unknown): boolean {
-  return toString(value) === '[object Object]';
+  return toString(value) === "[object Object]";
 }
 
 /**
@@ -130,7 +131,7 @@ export function isObject(value: unknown): boolean {
  * @returns {boolean} `true` if the value is a `Function`; otherwise, `false`.
  */
 export function isOrdinaryFunction(value: unknown): boolean {
-  return (_isObjectLike(value) && toString(value) === "[object Function]");
+  return _isObjectLike(value) && toString(value) === "[object Function]";
 }
 
 /**
@@ -237,7 +238,7 @@ export function isBigIntObject(value: unknown): boolean {
  *     `false`.
  */
 export function isFiniteNumber(value: unknown): boolean {
-  return typeof value === 'number' && isFinite(value);
+  return typeof value === "number" && isFinite(value);
 }
 
 /**
@@ -329,7 +330,7 @@ export function isArray(value: unknown): boolean {
  * @returns {!Array<T>}
  * @template T
  */
-export function toArray<T>(arrayLike: (ArrayLike<T> | T)):  Array<T> {
+export function toArray<T>(arrayLike: ArrayLike<T> | T): Array<T> {
   return arrayLike ? Array.prototype.slice.call(arrayLike) : [];
 }
 
@@ -348,9 +349,7 @@ export function isInt8Array(value: unknown): boolean {
  * @returns {boolean} `true` if the value is a `Uint8Array`; otherwise, `false`.
  */
 export function isUint8Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Uint8Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Uint8Array]";
 }
 
 /**
@@ -361,8 +360,7 @@ export function isUint8Array(value: unknown): boolean {
  */
 export function isUint8ClampedArray(value: unknown): boolean {
   return (
-    _isObjectLike(value) &&
-    toString(value) === "[object Uint8ClampedArray]"
+    _isObjectLike(value) && toString(value) === "[object Uint8ClampedArray]"
   );
 }
 
@@ -373,9 +371,7 @@ export function isUint8ClampedArray(value: unknown): boolean {
  *     `false`.
  */
 export function isInt16Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Int16Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Int16Array]";
 }
 
 /**
@@ -385,9 +381,7 @@ export function isInt16Array(value: unknown): boolean {
  *     `false`.
  */
 export function isUint16Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Uint16Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Uint16Array]";
 }
 
 /**
@@ -397,9 +391,7 @@ export function isUint16Array(value: unknown): boolean {
  *     `false`.
  */
 export function isInt32Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Int32Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Int32Array]";
 }
 
 /**
@@ -409,9 +401,7 @@ export function isInt32Array(value: unknown): boolean {
  *     `false`.
  */
 export function isUint32Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Uint32Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Uint32Array]";
 }
 
 /**
@@ -421,9 +411,7 @@ export function isUint32Array(value: unknown): boolean {
  *     `false`.
  */
 export function isFloat32Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Float32Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Float32Array]";
 }
 
 /**
@@ -433,9 +421,7 @@ export function isFloat32Array(value: unknown): boolean {
  *     `false`.
  */
 export function isFloat64Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Float64Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Float64Array]";
 }
 
 /**
@@ -445,9 +431,7 @@ export function isFloat64Array(value: unknown): boolean {
  *     `false`.
  */
 export function isBigInt64Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object BigInt64Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object BigInt64Array]";
 }
 
 /**
@@ -457,9 +441,7 @@ export function isBigInt64Array(value: unknown): boolean {
  *     `false`.
  */
 export function isBigUint64Array(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object BigUint64Array]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object BigUint64Array]";
 }
 
 /**
@@ -541,9 +523,7 @@ export function isMap(value: unknown): boolean {
  *     `false`.
  */
 export function isMapIterator(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Map Iterator]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Map Iterator]";
 }
 
 /**
@@ -562,9 +542,7 @@ export function isSet(value: unknown): boolean {
  *     `false`.
  */
 export function isSetIterator(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object Set Iterator]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object Set Iterator]";
 }
 
 /**
@@ -607,9 +585,7 @@ export function isWeakSet(value: unknown): boolean {
  *     `false`.
  */
 export function isArrayBuffer(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object ArrayBuffer]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object ArrayBuffer]";
 }
 
 /**
@@ -620,8 +596,7 @@ export function isArrayBuffer(value: unknown): boolean {
  */
 export function isSharedArrayBuffer(value: unknown): boolean {
   return (
-    _isObjectLike(value) &&
-    toString(value) === "[object SharedArrayBuffer]"
+    _isObjectLike(value) && toString(value) === "[object SharedArrayBuffer]"
   );
 }
 
@@ -692,8 +667,7 @@ export function isGeneratorObject(value: unknown): boolean {
  */
 export function isGeneratorFunction(value: unknown): boolean {
   return (
-    _isObjectLike(value) &&
-    toString(value) === "[object GeneratorFunction]"
+    _isObjectLike(value) && toString(value) === "[object GeneratorFunction]"
   );
 }
 
@@ -704,9 +678,7 @@ export function isGeneratorFunction(value: unknown): boolean {
  *     `false`.
  */
 export function isAsyncFunction(value: unknown): boolean {
-  return (
-    _isObjectLike(value) && toString(value) === "[object AsyncFunction]"
-  );
+  return _isObjectLike(value) && toString(value) === "[object AsyncFunction]";
 }
 
 // TODO:
