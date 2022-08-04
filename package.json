@@ -9,10 +9,7 @@
     "compile-doc": "jsdoc2md --template README.hbs --files index.js > ./README.md",
     "test": "tape '*.test.js'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/openinf/util-types.git"
-  },
+  "repository": "openinf/util-types",
   "keywords": [
     "types",
     "typechecking",
@@ -20,9 +17,7 @@
   ],
   "author": "The OpenINF Authors",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/openinf/util-types/issues"
-  },
+  "bugs": "https://github.com/openinf/util-types/issues",
   "homepage": "https://github.com/openinf/util-types#readme",
   "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
