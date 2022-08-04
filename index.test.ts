@@ -278,8 +278,8 @@ test("should yield false for invalid isBigUint64Array types", (t) => {
 
 // isBooleanObject
 test("should yield true for valid Boolean object types", (t) => {
-  t.strictEquals(isBooleanObject(new Boolean(false)), true);
-  t.strictEquals(isBooleanObject(new Boolean(true)), true);
+  t.strictEquals(isBooleanObject(Boolean(false)), true);
+  t.strictEquals(isBooleanObject(Boolean(true)), true);
   t.end();
 });
 
@@ -293,10 +293,10 @@ test("should yield false for invalid isBigUint64Array types", (t) => {
 
 // isBoxedPrimitive
 test("should yield true for valid boxed primitive values", (t) => {
-  t.strictEquals(isBoxedPrimitive(new Boolean(false)), true);
+  t.strictEquals(isBoxedPrimitive(Boolean(false)), true);
   t.strictEquals(isBoxedPrimitive(Object(Symbol("foo"))), true);
   t.strictEquals(isBoxedPrimitive(Object(BigInt(5))), true);
-  t.strictEquals(isBoxedPrimitive(new String("foo")), true);
+  t.strictEquals(isBoxedPrimitive(String("foo")), true);
   t.end();
 });
 
@@ -453,8 +453,8 @@ test("should yield false for invalid isInt32Array type", (t) => {
 
 // isStringObject
 test("should yield true for valid String types", (t) => {
-  t.strictEquals(isStringObject(new String("")), true);
-  t.strictEquals(isStringObject(new String("Foo")), true);
+  t.strictEquals(isStringObject(String("")), true);
+  t.strictEquals(isStringObject(String("Foo")), true);
   t.end();
 });
 
@@ -524,7 +524,7 @@ test("should yield false for invalid Error types", (t) => {
 
 // isNumberObject
 test("should yield true for valid number objects", (t) => {
-  t.strictEquals(isNumberObject(new Number(0)), true);
+  t.strictEquals(isNumberObject(Number(0)), true);
   t.end();
 });
 
@@ -613,8 +613,8 @@ test("should yield false for invalid SharedArrayBuffer types", (t) => {
 
 // isStringObject
 test("should yield true for valid String Object types", (t) => {
-  t.strictEquals(isStringObject(new String("")), true);
-  t.strictEquals(isStringObject(new String("Foo")), true);
+  t.strictEquals(isStringObject(String("")), true);
+  t.strictEquals(isStringObject(String("Foo")), true);
   t.end();
 });
 
