@@ -967,13 +967,21 @@ data type.
 | ----- | -------------------- | ------------------------ |
 | value | <code>unknown</code> | The value to be checked. |
 
-<br />
+<br /><br />
 
 ---
 
 <br />
 
 <div align="center">
+
+## Show Your Support
+
+<!-- Give a ⭐️ if this project helped you! -->
+
+If you like the project, [give it a star ⭐️], it will be a great encouragement to us.
+
+<br /><br />
 
 &copy; The OpenINF Authors
 
@@ -987,6 +995,8 @@ data type.
 
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
+
+[give it a star ⭐️]: https://github.com/openinf/util-types/stargazers
 
 [deepscan-badge]: https://badgen.net/deepscan/grade/team/18447/project/21804/branch/634015?icon=deepscan 'DeepScan grade'
 [deepscan-url]: https://deepscan.io/dashboard#view=project&tid=18447&pid=21804&bid=634015 'DeepScan grade'
