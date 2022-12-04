@@ -53,14 +53,14 @@ npm install @openinf/util-types
 Import the helper functions based on your platform.
 
 ```ts
-import { isObject } from "@openinf/util-types";
+import { isObject } from '@openinf/util-types';
 
 const maybeObject = null;
 
 if (isObject(maybeObject)) {
-  console.log("The value of `maybeObject` is of type Object.");
+  console.log('The value of `maybeObject` is of type Object.');
 } else {
-  console.log("The value of `maybeObject` is not of type Object.");
+  console.log('The value of `maybeObject` is not of type Object.');
 }
 ```
 
