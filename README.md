@@ -78,10 +78,38 @@ welcome._
 
 ## Installation
 
-`@openinf/util-types` runs on Node.js and is available via `npm`.
+`@openinf/util-types` runs on
+[supported versions of Node.js](#platform--node-js-lts) and is available via
+**`npm`**, **`pnpm`**, or **`yarn`**.
+
+**Using the npm CLI**
+
+<sup>See the
+[official documentation for this command](https://docs.npmjs.com/cli/commands/npm-install)
+for more information.</sup>
 
 ```shell
-npm install @openinf/util-types
+npm i @openinf/util-types
+```
+
+**Using the pnpm CLI**
+
+<sup>See the
+[official documentation for this command](https://pnpm.io/cli/install) for more
+information.</sup>
+
+```shell
+pnpm i @openinf/util-types
+```
+
+**Using the Yarn 1 CLI (Classic)**
+
+<sup>See the
+[official documentation for this command](https://classic.yarnpkg.com/en/docs/cli/add)
+for more information.</sup>
+
+```shell
+yarn add @openinf/util-types
 ```
 
 ## Usage
