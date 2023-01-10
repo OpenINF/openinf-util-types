@@ -1061,7 +1061,7 @@ greatly encourage us.
 <!-- prettier-ignore-start -->
 <!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
 
-[give it a star ⭐️]: https://github.com/openinf/util-types/stargazers
+[give it a star ⭐️]: https://github.com/openinf/openinf-util-types/stargazers
 
 [deepscan-badge]: https://badgen.net/deepscan/grade/team/18447/project/21804/branch/634015?icon=deepscan 'DeepScan grade'
 [deepscan-url]: https://deepscan.io/dashboard#view=project&tid=18447&pid=21804&bid=634015 'DeepScan grade'
