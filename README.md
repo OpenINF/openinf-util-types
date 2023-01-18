@@ -1058,9 +1058,6 @@ greatly encourage us.
 
 </div>
 
-<!-- prettier-ignore-start -->
-<!-- PRESERVE LINK DEFINITION LABEL CASE - START -->
-
 [give it a star ⭐️]: https://github.com/openinf/openinf-util-types/stargazers
 
 [deepscan-badge]: https://badgen.net/deepscan/grade/team/18447/project/21804/branch/634015?icon=deepscan 'DeepScan grade'
@@ -1080,6 +1077,3 @@ greatly encourage us.
 [prettier-badge]: https://img.shields.io/badge/code_style-Prettier-ff69b4.svg?logo=prettier 'Code Style: Prettier'
 [prettier-url]: https://prettier.io/playground 'Code Style: Prettier'
 [types-included-badge]: https://badgen.net/npm/types/@openinf/util-types?icon=typescript 'TypeScript types: included'
-
-<!-- PRESERVE LINK DEFINITION LABEL CASE - END -->
-<!-- prettier-ignore-end -->
