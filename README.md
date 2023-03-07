@@ -97,7 +97,7 @@ npm i @openinf/util-types
 information.</sup>
 
 ```shell
-pnpm i @openinf/util-types
+pnpm add @openinf/util-types
 ```
 
 **Using the Yarn 1 CLI (Classic)**
