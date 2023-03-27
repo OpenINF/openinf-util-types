@@ -27,7 +27,7 @@
   "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
     "@types/jsdom": "21.1.1",
-    "@types/tape": "4.13.3",
+    "@types/tape": "4.13.4",
     "jsdom": "21.1.1",
     "tape": "5.6.3",
     "typescript": "5.0.2"
