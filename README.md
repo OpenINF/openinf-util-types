@@ -68,7 +68,21 @@ welcome._
 
 </div>
 
+<br /><br />
+
+---
+
 <br />
+
+### Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [API](#api)
+- [Contributing](#contributing)
+- [License](#license)
+
+<br /><br />
 
 ---
 
@@ -110,6 +124,8 @@ for more information.</sup>
 yarn add @openinf/util-types
 ```
 
+<br /><br />
+
 ### Usage
 
 Import the helper functions based on your platform.
@@ -126,13 +142,9 @@ if (isObject(maybeObject)) {
 }
 ```
 
-<br />
+<br /><br />
 
----
-
-<br />
-
-### Functions
+### API
 
 <dl>
 <dt><a href="#toString">toString(value)</a> ⇒ <code>string</code></dt>
