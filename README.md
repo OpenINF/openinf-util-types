@@ -351,7 +351,7 @@ data type.</p>
 
 <a name="toString"></a>
 
-### toString(value) ⇒ <code>string</code>
+#### toString(value) ⇒ <code>string</code>
 
 Returns the ECMAScript [[Class]] internal property of the passed value.
 
@@ -364,7 +364,7 @@ Returns the ECMAScript [[Class]] internal property of the passed value.
 
 <a name="isUndefined"></a>
 
-### isUndefined(value) ⇒ <code>boolean</code>
+#### isUndefined(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually of type [`undefined`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined).
 
@@ -377,7 +377,7 @@ Determines whether the passed value is actually of type [`undefined`](https://de
 
 <a name="isObject"></a>
 
-### isObject(value) ⇒ <code>boolean</code>
+#### isObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type `Object`.
 
@@ -390,7 +390,7 @@ Determines whether the passed value is of type `Object`.
 
 <a name="isOrdinaryFunction"></a>
 
-### isOrdinaryFunction(value) ⇒ <code>boolean</code>
+#### isOrdinaryFunction(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type `Function`.
 
@@ -403,7 +403,7 @@ Determines whether the passed value is of type `Function`.
 
 <a name="isBooleanObject"></a>
 
-### isBooleanObject(value) ⇒ <code>boolean</code>
+#### isBooleanObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`Boolean`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
 object.
@@ -418,7 +418,7 @@ object.
 
 <a name="isSymbolObject"></a>
 
-### isSymbolObject(value) ⇒ <code>boolean</code>
+#### isSymbolObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`Symbol`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
 object.
@@ -433,7 +433,7 @@ object.
 
 <a name="isNativeError"></a>
 
-### isNativeError(value) ⇒ <code>boolean</code>
+#### isNativeError(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is one of the native error types:
 
@@ -455,7 +455,7 @@ Determines whether the passed value is one of the native error types:
 
 <a name="isNumberObject"></a>
 
-### isNumberObject(value) ⇒ <code>boolean</code>
+#### isNumberObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 object (boxed primitive).
@@ -470,7 +470,7 @@ object (boxed primitive).
 
 <a name="isBigIntObject"></a>
 
-### isBigIntObject(value) ⇒ <code>boolean</code>
+#### isBigIntObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`BigInt`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt)
 object (boxed primitive).
@@ -485,7 +485,7 @@ object (boxed primitive).
 
 <a name="isFiniteNumber"></a>
 
-### isFiniteNumber(value) ⇒ <code>boolean</code>
+#### isFiniteNumber(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of number type and finite. `NaN` and
 `Infinity` are not considered a finite number. String numbers are not
@@ -501,7 +501,7 @@ considered numbers.
 
 <a name="isMath"></a>
 
-### isMath(value) ⇒ <code>boolean</code>
+#### isMath(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually the [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
 global object.
@@ -515,7 +515,7 @@ global object.
 
 <a name="isDate"></a>
 
-### isDate(value) ⇒ <code>boolean</code>
+#### isDate(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date).
 
@@ -528,7 +528,7 @@ Determines whether the passed value is of type [`Date`](https://developer.mozill
 
 <a name="isStringObject"></a>
 
-### isStringObject(value) ⇒ <code>boolean</code>
+#### isStringObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`String`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 object.
@@ -543,7 +543,7 @@ object.
 
 <a name="isRegExp"></a>
 
-### isRegExp(value) ⇒ <code>boolean</code>
+#### isRegExp(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`RegExp`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
@@ -556,7 +556,7 @@ Determines whether the passed value is of type [`RegExp`](https://developer.mozi
 
 <a name="isArray"></a>
 
-### isArray(value) ⇒ <code>boolean</code>
+#### isArray(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 
@@ -569,7 +569,7 @@ Determines whether the passed value is of type [`Array`](https://developer.mozil
 
 <a name="toArray"></a>
 
-### toArray(arrayLike) ⇒ <code>Array.&lt;T&gt;</code>
+#### toArray(arrayLike) ⇒ <code>Array.&lt;T&gt;</code>
 
 Converts an array-like object to an array.
 
@@ -581,7 +581,7 @@ Converts an array-like object to an array.
 
 <a name="isInt8Array"></a>
 
-### isInt8Array(value) ⇒ <code>boolean</code>
+#### isInt8Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Int8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array).
 
@@ -594,7 +594,7 @@ Determines whether the passed value is of type [`Int8Array`](https://developer.m
 
 <a name="isUint8Array"></a>
 
-### isUint8Array(value) ⇒ <code>boolean</code>
+#### isUint8Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array).
 
@@ -607,7 +607,7 @@ Determines whether the passed value is of type [`Uint8Array`](https://developer.
 
 <a name="isUint8ClampedArray"></a>
 
-### isUint8ClampedArray(value) ⇒ <code>boolean</code>
+#### isUint8ClampedArray(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Uint8ClampedArray`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray).
 
@@ -621,7 +621,7 @@ Determines whether the passed value is of type [`Uint8ClampedArray`](https://dev
 
 <a name="isInt16Array"></a>
 
-### isInt16Array(value) ⇒ <code>boolean</code>
+#### isInt16Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Int16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array).
 
@@ -635,7 +635,7 @@ Determines whether the passed value is of type [`Int16Array`](https://developer.
 
 <a name="isUint16Array"></a>
 
-### isUint16Array(value) ⇒ <code>boolean</code>
+#### isUint16Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Uint16Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array).
 
@@ -649,7 +649,7 @@ Determines whether the passed value is of type [`Uint16Array`](https://developer
 
 <a name="isInt32Array"></a>
 
-### isInt32Array(value) ⇒ <code>boolean</code>
+#### isInt32Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Int32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array).
 
@@ -663,7 +663,7 @@ Determines whether the passed value is of type [`Int32Array`](https://developer.
 
 <a name="isUint32Array"></a>
 
-### isUint32Array(value) ⇒ <code>boolean</code>
+#### isUint32Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Uint32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array).
 
@@ -677,7 +677,7 @@ Determines whether the passed value is of type [`Uint32Array`](https://developer
 
 <a name="isFloat32Array"></a>
 
-### isFloat32Array(value) ⇒ <code>boolean</code>
+#### isFloat32Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Float32Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array).
 
@@ -691,7 +691,7 @@ Determines whether the passed value is of type [`Float32Array`](https://develope
 
 <a name="isFloat64Array"></a>
 
-### isFloat64Array(value) ⇒ <code>boolean</code>
+#### isFloat64Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Float64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array).
 
@@ -705,7 +705,7 @@ Determines whether the passed value is of type [`Float64Array`](https://develope
 
 <a name="isBigInt64Array"></a>
 
-### isBigInt64Array(value) ⇒ <code>boolean</code>
+#### isBigInt64Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`BigInt64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array).
 
@@ -719,7 +719,7 @@ Determines whether the passed value is of type [`BigInt64Array`](https://develop
 
 <a name="isBigUint64Array"></a>
 
-### isBigUint64Array(value) ⇒ <code>boolean</code>
+#### isBigUint64Array(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`BigUint64Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigUInt64Array).
 
@@ -733,7 +733,7 @@ Determines whether the passed value is of type [`BigUint64Array`](https://develo
 
 <a name="isArrayBufferView"></a>
 
-### isArrayBufferView(value) ⇒ <code>boolean</code>
+#### isArrayBufferView(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is an [`ArrayBufferView`](https://developer.mozilla.org/en-US/docs/Web/API/ArrayBufferView),
 which is a helper type representing any of the following JavaScript [**TypedArray**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray)
@@ -760,7 +760,7 @@ types:
 
 <a name="isTypedArray"></a>
 
-### isTypedArray(value) ⇒ <code>boolean</code>
+#### isTypedArray(value) ⇒ <code>boolean</code>
 
 Determines if value is one of the [**TypedArray** element types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray#typedarray_objects):
 
@@ -786,7 +786,7 @@ Determines if value is one of the [**TypedArray** element types](https://develop
 
 <a name="isMap"></a>
 
-### isMap(value) ⇒ <code>boolean</code>
+#### isMap(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Map`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map).
 
@@ -799,7 +799,7 @@ Determines whether the passed value is of type [`Map`](https://developer.mozilla
 
 <a name="isMapIterator"></a>
 
-### isMapIterator(value) ⇒ <code>boolean</code>
+#### isMapIterator(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Map Iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/@@iterator).
 
@@ -813,7 +813,7 @@ Determines whether the passed value is of type [`Map Iterator`](https://develope
 
 <a name="isSet"></a>
 
-### isSet(value) ⇒ <code>boolean</code>
+#### isSet(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Set`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).
 
@@ -826,7 +826,7 @@ Determines whether the passed value is of type [`Set`](https://developer.mozilla
 
 <a name="isSetIterator"></a>
 
-### isSetIterator(value) ⇒ <code>boolean</code>
+#### isSetIterator(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Set Iterator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/@@iterator).
 
@@ -840,7 +840,7 @@ Determines whether the passed value is of type [`Set Iterator`](https://develope
 
 <a name="isWeakMap"></a>
 
-### isWeakMap(value) ⇒ <code>boolean</code>
+#### isWeakMap(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`WeakMap`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap).
 
@@ -853,7 +853,7 @@ Determines whether the passed value is of type [`WeakMap`](https://developer.moz
 
 <a name="isWeakSet"></a>
 
-### isWeakSet(value) ⇒ <code>boolean</code>
+#### isWeakSet(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`WeakSet`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet).
 
@@ -866,7 +866,7 @@ Determines whether the passed value is of type [`WeakSet`](https://developer.moz
 
 <a name="isArrayBuffer"></a>
 
-### isArrayBuffer(value) ⇒ <code>boolean</code>
+#### isArrayBuffer(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
 
@@ -880,7 +880,7 @@ Determines whether the passed value is of type [`ArrayBuffer`](https://developer
 
 <a name="isSharedArrayBuffer"></a>
 
-### isSharedArrayBuffer(value) ⇒ <code>boolean</code>
+#### isSharedArrayBuffer(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer).
 
@@ -894,7 +894,7 @@ Determines whether the passed value is of type [`SharedArrayBuffer`](https://dev
 
 <a name="isAnyArrayBuffer"></a>
 
-### isAnyArrayBuffer(value) ⇒ <code>boolean</code>
+#### isAnyArrayBuffer(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is one of either [`ArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer)
 or [`SharedArrayBuffer`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer).
@@ -909,7 +909,7 @@ otherwise, `false`.
 
 <a name="isDataView"></a>
 
-### isDataView(value) ⇒ <code>boolean</code>
+#### isDataView(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`DataView`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView).
 
@@ -922,7 +922,7 @@ Determines whether the passed value is of type [`DataView`](https://developer.mo
 
 <a name="isPromise"></a>
 
-### isPromise(value) ⇒ <code>boolean</code>
+#### isPromise(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 
@@ -935,7 +935,7 @@ Determines whether the passed value is of type [`Promise`](https://developer.moz
 
 <a name="isGeneratorObject"></a>
 
-### isGeneratorObject(value) ⇒ <code>boolean</code>
+#### isGeneratorObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually a [`Generator`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
 object.
@@ -949,7 +949,7 @@ object.
 
 <a name="isGeneratorFunction"></a>
 
-### isGeneratorFunction(value) ⇒ <code>boolean</code>
+#### isGeneratorFunction(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`GeneratorFunction`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction).
 
@@ -963,7 +963,7 @@ Determines whether the passed value is of type [`GeneratorFunction`](https://dev
 
 <a name="isAsyncFunction"></a>
 
-### isAsyncFunction(value) ⇒ <code>boolean</code>
+#### isAsyncFunction(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of type [`AsyncFunction`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction).
 
@@ -977,7 +977,7 @@ Determines whether the passed value is of type [`AsyncFunction`](https://develop
 
 <a name="isArgumentsObject"></a>
 
-### isArgumentsObject(value) ⇒ <code>boolean</code>
+#### isArgumentsObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is actually an
 [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments)
@@ -993,7 +993,7 @@ object.
 
 <a name="isBoxedPrimitive"></a>
 
-### isBoxedPrimitive(value) ⇒ <code>boolean</code>
+#### isBoxedPrimitive(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is a primitive wrapped by its object
 equivalent (a.k.a. "boxed"). Except for `null` and `undefined`, all primitive
@@ -1016,7 +1016,7 @@ otherwise, `false`.
 
 <a name="isModuleNamespaceObject"></a>
 
-### isModuleNamespaceObject(value) ⇒ <code>boolean</code>
+#### isModuleNamespaceObject(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is a `Module` namespace object.
 
@@ -1029,7 +1029,7 @@ Determines whether the passed value is a `Module` namespace object.
 
 <a name="isPrimitive"></a>
 
-### isPrimitive(value) ⇒ <code>boolean</code>
+#### isPrimitive(value) ⇒ <code>boolean</code>
 
 Determines whether the passed value is of a [**primitive**](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)
 data type.
