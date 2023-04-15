@@ -1,30 +1,30 @@
 {
   "name": "@openinf/util-types",
-  "version": "2.1.3",
+  "version": "0.0.0-development",
+  "description": "Fundamental JavaScript type-related utilities",
+  "packageManager": "pnpm@8.2.0",
   "engines": {
-    "node": "^14.15.0 || ^16.13.0 || ^18.12.0",
-    "npm": "^6.14.8 || ^8.1.0 || ^8.19.2 || ^9.0.0",
-    "npx": "^6.14.8 || ^8.1.0 || ^8.19.2 || ^9.0.0"
+    "node": "^16.13.0"
   },
-  "main": "./index.js",
-  "types": "./index.d.ts",
+  "keywords": [
+    "types",
+    "typechecking",
+    "utilities"
+  ],
+  "repository": "OpenINF/openinf-util-types",
+  "license": "MIT OR Apache-2.0",
+  "author": "The OpenINF Authors",
+  "directories": {
+    "lib": "lib",
+    "doc": "doc",
+    "test": "test"
+  },
   "scripts": {
     "prepare": "npm run compile-src && npm run compile-doc",
     "compile-src": "tsc --project ./",
     "compile-doc": "",
     "test": "tape '*.test.js'"
   },
-  "repository": "openinf/util-types",
-  "keywords": [
-    "types",
-    "typechecking",
-    "utilities"
-  ],
-  "author": "The OpenINF Authors",
-  "license": "MIT",
-  "bugs": "https://github.com/openinf/util-types/issues",
-  "homepage": "https://github.com/openinf/util-types#readme",
-  "description": "Fundamental JavaScript type-related utilities",
   "devDependencies": {
     "@types/jsdom": "21.1.1",
     "@types/tape": "4.13.4",
