@@ -20,12 +20,13 @@
 
 <br />
 
-The high-level goal of `@openinf/util-types` is to serve as a Node.js
-package containing utilities for **fundamental JavaScript type-related
-operations** primarily enabling users to perform native typechecking and
-simplify type coercion. As is the case with any software project in continuous
-development, omissions and errors may exist, for which [contributions are
-welcome](#contributing).
+The high-level goal of `@openinf/util-types` is to serve as a Node.js package
+containing utilities for **fundamental JavaScript type-related operations**
+primarily enabling users to perform native typechecking and simplify type
+coercion. We are constantly working to improve this repository, so please feel
+free to [contribute](#contributing) if you notice any omissions or errors.
+
+Thanks!
 
 <br />
 
