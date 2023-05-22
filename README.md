@@ -223,7 +223,7 @@ object.</p>
 <dt><a href="#isArray">isArray(value)</a> ⇒ <code>boolean</code></dt>
 <dd><p>Determines whether the passed value is of type <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"><code>Array</code></a>.</p>
 </dd>
-<dt><a href="#toArray">toArray(arrayLike)</a> ⇒ <code>Array.&lt;T&gt;</code></dt>
+<dt><a href="#toArray">toArray(arrayLike)</a> ⇒ <code>Array&lt;T&gt;</code></dt>
 <dd><p>Converts an array-like object to an array.</p>
 </dd>
 <dt><a href="#isInt8Array">isInt8Array(value)</a> ⇒ <code>boolean</code></dt>
@@ -582,7 +582,7 @@ Determines whether the passed value is of type [`Array`](https://developer.mozil
 
 <a name="toArray"></a>
 
-#### toArray(arrayLike) ⇒ <code>Array.&lt;T&gt;</code>
+#### toArray(arrayLike) ⇒ <code>Array&lt;T&gt;</code>
 
 Converts an array-like object to an array.
 
@@ -590,7 +590,7 @@ Converts an array-like object to an array.
 
 | Param     | Type                                                    |
 | --------- | ------------------------------------------------------- |
-| arrayLike | <code>ArrayLike.&lt;T&gt;</code> \| <code>string</code> |
+| arrayLike | <code>ArrayLike&lt;T&gt;</code> \| <code>string</code> |
 
 <a name="isInt8Array"></a>
 
