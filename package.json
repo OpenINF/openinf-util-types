@@ -3,28 +3,9 @@
   "version": "0.0.0-development",
   "description": "Fundamental JavaScript type-related utilities",
   "packageManager": "pnpm@8.6.3",
-  "engines": {
-    "node": "^18.0.0"
-  },
-  "keywords": [
-    "types",
-    "typechecking",
-    "utilities"
-  ],
   "repository": "OpenINF/openinf-util-types",
   "license": "MIT OR Apache-2.0",
   "author": "The OpenINF Authors",
-  "directories": {
-    "lib": "lib",
-    "doc": "doc",
-    "test": "test"
-  },
-  "scripts": {
-    "prepare": "npm run compile-src && npm run compile-doc",
-    "compile-src": "tsc --project ./",
-    "compile-doc": "",
-    "test": "tape '*.test.js'"
-  },
   "devDependencies": {
     "@types/jsdom": "21.1.1",
     "@types/tape": "5.6.0",
