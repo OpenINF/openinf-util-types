@@ -11,6 +11,6 @@
     "@types/jsdom": "21.1.1",
     "@types/node": "20.x.x",
     "jsdom": "22.1.0",
-    "typescript": "5.1.3"
+    "typescript": "5.4.3"
   }
 }
