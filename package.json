@@ -9,7 +9,7 @@
   "author": "The OpenINF Authors",
   "devDependencies": {
     "@types/jsdom": "21.1.1",
-    "@types/node": "20.x.x",
+    "@types/node": "24.x",
     "jsdom": "22.1.0",
     "typescript": "5.1.3"
   }
